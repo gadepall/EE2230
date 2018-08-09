@@ -1,0 +1,10 @@
+       \begin{circuitikz}
+      \draw (0,0)
+    to[V,v<=$V_{s}$] (0,3) 
+    to [L=$L$,i>^=$I_L$, v=$v_{L}$] (3,3)
+    to[C=$C$,i>^=$I_C$,v=$v_{C}$] (3,0)
+    (3,3) to [short] (5,3)
+    to [R=$R$,i>^=$I_o$,v=$v_{o}$] (5,0)
+    to[short] (0,0)
+    ;  
+    \end{circuitikz}

@@ -1,0 +1,21 @@
+       \begin{circuitikz}
+      \draw (0,0)
+    to[V,v<=$V_{s}$] (0,3) 
+    (2,3) node[nigfete,rotate=90] (nmos) {}
+    (nmos.G) to (2,2)
+    (nmos.D) to (0,3)
+    (nmos.S) to (4,3)
+    to [L=$L$] (6,3)
+    to[C=$C$] (6,0)
+    (6,3) to [short] (8,3)
+    to [R=$R$,i>^=$I_o$,v=$v_{o}$] (8,0)
+    to[short] (0,0)
+    (4,0) to [D] (4,3)
+    (2,2) to [short] (2,1.5)
+    (2,0.8) node[block]{{\textbf{TLP350}}}
+    %(nmos.S) to (3,2)
+    (3.25,3) to [short] (3.25,1)
+    to [short] (3,1)
+    %to [D, l=$D$] (5,3)
+    ;  
+    \end{circuitikz}
