@@ -123,15 +123,15 @@
 \setlongtables
 
 \setlength\gnumericTableWidth{%
-	74pt+%
-	53pt+%
-	81pt+%
-	74pt+%
-	53pt+%
-	53pt+%
-	53pt+%
-	53pt+%
-	53pt+%
+	191pt+%
+	42pt+%
+	50pt+%
+	51pt+%
+	41pt+%
+	41pt+%
+	69pt+%
+	45pt+%
+	51pt+%
 0pt}
 \def\gumericNumCols{9}
 \setlength\gnumericTableWidthComplete{\gnumericTableWidth+%
@@ -151,15 +151,15 @@
 %%                                                                  %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\ifthenelse{\isundefined{\gnumericColA}}{\newlength{\gnumericColA}}{}\settowidth{\gnumericColA}{\begin{tabular}{@{}p{180pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColB}}{\newlength{\gnumericColB}}{}\settowidth{\gnumericColB}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColC}}{\newlength{\gnumericColC}}{}\settowidth{\gnumericColC}{\begin{tabular}{@{}p{81pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColD}}{\newlength{\gnumericColD}}{}\settowidth{\gnumericColD}{\begin{tabular}{@{}p{74pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColE}}{\newlength{\gnumericColE}}{}\settowidth{\gnumericColE}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColF}}{\newlength{\gnumericColF}}{}\settowidth{\gnumericColF}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColG}}{\newlength{\gnumericColG}}{}\settowidth{\gnumericColG}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColH}}{\newlength{\gnumericColH}}{}\settowidth{\gnumericColH}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
-\ifthenelse{\isundefined{\gnumericColI}}{\newlength{\gnumericColI}}{}\settowidth{\gnumericColI}{\begin{tabular}{@{}p{53pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColA}}{\newlength{\gnumericColA}}{}\settowidth{\gnumericColA}{\begin{tabular}{@{}p{191pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColB}}{\newlength{\gnumericColB}}{}\settowidth{\gnumericColB}{\begin{tabular}{@{}p{42pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColC}}{\newlength{\gnumericColC}}{}\settowidth{\gnumericColC}{\begin{tabular}{@{}p{50pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColD}}{\newlength{\gnumericColD}}{}\settowidth{\gnumericColD}{\begin{tabular}{@{}p{51pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColE}}{\newlength{\gnumericColE}}{}\settowidth{\gnumericColE}{\begin{tabular}{@{}p{41pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColF}}{\newlength{\gnumericColF}}{}\settowidth{\gnumericColF}{\begin{tabular}{@{}p{41pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColG}}{\newlength{\gnumericColG}}{}\settowidth{\gnumericColG}{\begin{tabular}{@{}p{69pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColH}}{\newlength{\gnumericColH}}{}\settowidth{\gnumericColH}{\begin{tabular}{@{}p{45pt*\gnumericScale}@{}}x\end{tabular}}
+\ifthenelse{\isundefined{\gnumericColI}}{\newlength{\gnumericColI}}{}\settowidth{\gnumericColI}{\begin{tabular}{@{}p{51pt*\gnumericScale}@{}}x\end{tabular}}
 
 \begin{tabular}[c]{%
 	b{\gnumericColA}%
@@ -269,17 +269,17 @@
 	&\multicolumn{1}{p{\gnumericColE}|}%
 	{}
 	&\multicolumn{1}{p{\gnumericColF}|}%
-	{\gnumericPB{\centering}\gnumbox{GND}}
+	{\gnumericPB{\centering}\gnumbox{-5 V}}
 	&\multicolumn{1}{p{\gnumericColG}|}%
-	{}
+	{\gnumericPB{\centering}\gnumbox{10 $\ohm$}}
 	&\multicolumn{1}{p{\gnumericColH}|}%
 	{}
 	&\multicolumn{1}{p{\gnumericColI}||}%
-	{\gnumericPB{\centering}\gnumbox{15V}}
+	{\gnumericPB{\centering}\gnumbox{12 V}}
 \\
 \hhline{||---------||}
 	 \multicolumn{1}{||p{\gnumericColA}|}%
-	{}
+	{\gnumericPB{\centering}\gnumbox{\textbf{MOSFET}}}
 	&\multicolumn{1}{p{\gnumericColB}|}%
 	{}
 	&\multicolumn{1}{p{\gnumericColC}|}%
@@ -289,9 +289,9 @@
 	&\multicolumn{1}{p{\gnumericColE}|}%
 	{}
 	&\multicolumn{1}{p{\gnumericColF}|}%
-	{}
+	{\gnumericPB{\centering}\gnumbox{S}}
 	&\multicolumn{1}{p{\gnumericColG}|}%
-	{\gnumericPB{\centering}\gnumbox{22 $\Omega$}}
+	{\gnumericPB{\centering}\gnumbox{ G}}
 	&\multicolumn{1}{p{\gnumericColH}|}%
 	{}
 	&\multicolumn{1}{p{\gnumericColI}||}%

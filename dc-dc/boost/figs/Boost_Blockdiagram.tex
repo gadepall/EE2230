@@ -1,0 +1,21 @@
+\begin{tikzpicture}
+\node[draw,text width=3em] at (4.1,7) {DC Source};
+\node[draw,text width=4em] at (7,7) {Inductor};
+\node[draw,text width=4em] at (10,7) {MOSFET};
+\node[draw,text width=2em] at (13,7) {LPF};
+\node[draw,text width=4em] at (5,5) {Arduino};
+\node[draw,text width=4em] at (8,5) {Gate Driver};
+\draw (1,7) -- (3.4,7);
+\draw (4.7,7) -- (6.2,7);
+\draw (7.8,7) -- (9.2,7);
+\draw (10.8,7) -- (12.5,7);
+\draw (13.5,7) -- (15,7);
+\draw  (5.8,5)--(7.2,5);
+\draw (10,6.54)--(10,5);
+\draw (8.8,5)--(10,5);
+
+\node[below left= 1mm of {(1,7.37)}] {$V_{in}$};
+\node[below left= 1mm of {(15.9,7.37)}] {$V_{dc}$};
+\node[below left= 1mm of {(9.3,7.47)}] {$D$};
+\node[below left= 1mm of {(10.7,6.6)}] {$G$};
+\end{tikzpicture}

@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016/Debian) (preloaded format=latex 2018.7.30)  9 AUG 2018 17:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=latex 2018.10.24)  2 NOV 2018 14:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **gvv_swaroop_buck.tex
 (./gvv_swaroop_buck.tex
-LaTeX2e <2017/01/01> patch level 3
-Babel <3.9r> and hyphenation patterns for 3 language(s) loaded.
+LaTeX2e <2017-04-15>
+Babel <3.18> and hyphenation patterns for 7 language(s) loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
 Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
@@ -123,7 +123,7 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 Package xcolor Info: Driver file: dvips.def on input line 225.
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics-def/dvips.def
-File: dvips.def 2016/07/10 v3.1a Driver-dependent file (DPC,SPQR)
+File: dvips.def 2017/06/20 v3.1d Graphics/color driver for dvips
 )
 Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
 Package xcolor Info: Model `RGB' extended on input line 1364.
@@ -173,7 +173,7 @@ ference \hbox to\hsize {\normalfont \footnotesize \hfil \box \@tempboxa \hfil }
 \fi .
 \c@ContinuedFloat=\count94
 ) (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2016/11/05 v2.16a AMS math features
+Package: amsmath 2017/09/02 v2.17a AMS math features
 \@mathmargin=\skip44
 
 For additional information on amsmath, use the `?' option.
@@ -231,7 +231,7 @@ LaTeX Info: Redefining \[ on input line 2817.
 LaTeX Info: Redefining \] on input line 2818.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/multicol.sty
-Package: multicol 2016/04/07 v1.8p multicolumn formatting (FMi)
+Package: multicol 2017/04/11 v1.8q multicolumn formatting (FMi)
 \c@tracingmulticols=\count107
 
 
@@ -297,14 +297,14 @@ Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
 LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 ))
-(/home/linaro/texmf/tex/latex/iithtlc/iithtlc.sty
+(/home/gadepall/texmf/tex/latex/iithtlc/iithtlc.sty
 Package: iithtlc 10/04/2016 IITH TLC
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
-Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2016/10/09 v1.0u Standard LaTeX Graphics (DPC,SPQR)
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
 
 (/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
@@ -607,31 +607,218 @@ File: pgfmodulematrix.code.tex 2013/09/17  (rcs-revision 1.8)
 zlibrarytopaths.code.tex
 File: tikzlibrarytopaths.code.tex 2008/06/17 v3.0.1a (rcs-revision 1.2)
 )))
-(/usr/share/texlive/texmf-dist/tex/latex/circuitikz/circuitikz.sty
-Package: circuitikz 2016/09/08{} The CircuiTikz circuit drawing package version
- 0.7
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-euclide.sty
+Package: tkz-euclide 2011/06/01 1.16 c for plots 2d 
 
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-base/tkz-base.sty
+Package: tkz-base 2011/06/01 1.16 c tkz-base
+
+(/usr/share/texlive/texmf-dist/tex/latex/etex-pkg/etex.sty
+Package: etex 2016/08/01 v2.7 eTeX basic definition package (PEB,DPC)
+
+
+Package etex Warning: Extended allocation already in use.
+(etex)                etex.sty code will not be used.
+(etex)                To force etex package to load, add
+(etex)                \RequirePackage{etex}
+(etex)                at the start of the document.
+
+)
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibrarycalc.code.tex
 File: tikzlibrarycalc.code.tex 2013/07/15 v3.0.1a (rcs-revision 1.9)
 )
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryarrows.code.tex
+File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryarrows.code.
 tex
 File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 \arrowsize=\dimen259
-) (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirc.defines.tex
-\pgf@circ@res@up=\dimen260
-\pgf@circ@res@down=\dimen261
-\pgf@circ@res@zero=\dimen262
-\pgf@circ@res@left=\dimen263
-\pgf@circ@res@right=\dimen264
-\pgf@circ@res@other=\dimen265
-\pgf@circ@res@step=\dimen266
-\pgf@circ@res@temp=\dimen267
-\pgfstartlinewidth=\dimen268
-\pgf@circ@Rlen=\dimen269
-) (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircutils.tex)
-(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircmath.tex)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibraryplotmarks.co
+de.tex
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2008/10/06 v3.0.1a (rcs-revision 1.7)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryshapes.misc.code.tex
+File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
+s.misc.code.tex
+File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduledecorations.cod
+e.tex
+\pgfdecoratedcompleteddistance=\dimen260
+\pgfdecoratedremainingdistance=\dimen261
+\pgfdecoratedinputsegmentcompleteddistance=\dimen262
+\pgfdecoratedinputsegmentremainingdistance=\dimen263
+\pgf@decorate@distancetomove=\dimen264
+\pgf@decorate@repeatstate=\count144
+\pgfdecorationsegmentamplitude=\dimen265
+\pgfdecorationsegmentlength=\dimen266
+)
+\tikz@lib@dec@box=\box69
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.markings.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.markings.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarypatterns.code.tex
+File: tikzlibrarypatterns.code.tex 2008/01/15 v3.0.1a (rcs-revision 1.2)
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/pgflibrarypatterns.cod
+e.tex
+File: pgflibrarypatterns.code.tex 2008/03/03 v3.0.1a (rcs-revision 1.13)
+)) (/usr/share/texlive/texmf-dist/tex/latex/numprint/numprint.sty
+Package: numprint 2012/08/20 v1.39 Print numbers (HH)
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
+\col@sep=\dimen267
+\extrarowheight=\dimen268
+\NC@list=\toks35
+\extratabsurround=\skip49
+\backup@length=\skip50
+)
+\c@nprt@mantissa@digitsbefore=\count145
+\c@nprt@mantissa@digitsafter=\count146
+\c@nprt@exponent@digitsbefore=\count147
+\c@nprt@exponent@digitsafter=\count148
+\nprt@digitwidth=\skip51
+\nprt@sepwidth=\skip52
+\nprt@decimalwidth=\skip53
+\nprt@blockwidth=\skip54
+\nprt@digittoks=\toks36
+\nprt@pretoks=\toks37
+\nprt@posttoks=\toks38
+\nprt@thisdigit=\count149
+\nprt@curpos=\count150
+\nprt@rndpos=\count151
+\c@nprt@digitsfirstblock=\count152
+\c@nprt@blockcnt=\count153
+\c@nprt@cntprint=\count154
+
+No configuration file `numprint.cfg' found.)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp.sty
+Package: fp 1995/04/02
+
+`Fixed Point Package', Version 0.8, April 2, 1995 (C) Michael Mehlich
+(/usr/share/texlive/texmf-dist/tex/latex/fp/defpattern.sty
+Package: defpattern 1994/10/12
+\actioncount=\count155
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-basic.sty
+Package: fp-basic 1996/05/13
+\FP@xs=\count156
+\FP@xia=\count157
+\FP@xib=\count158
+\FP@xfa=\count159
+\FP@xfb=\count160
+\FP@rega=\count161
+\FP@regb=\count162
+\FP@regs=\count163
+\FP@times=\count164
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-addons.sty
+Package: fp-addons 1995/03/15
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-snap.sty
+Package: fp-snap 1995/04/05
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-exp.sty
+Package: fp-exp 1995/04/03
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-trigo.sty
+Package: fp-trigo 1995/04/14
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-pas.sty
+Package: fp-pas 1994/08/29
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-random.sty
+Package: fp-random 1995/02/23
+\FPseed=\count165
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eqn.sty
+Package: fp-eqn 1995/04/03
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-upn.sty
+Package: fp-upn 1996/10/21
+)
+(/usr/share/texlive/texmf-dist/tex/latex/fp/fp-eval.sty
+Package: fp-eval 1995/04/03
+))
+\tkzRadius=\dimen269
+\tkzLength=\dimen270
+\tkz@radi=\dimen271
+\tkz@ax=\dimen272
+\tkz@ay=\dimen273
+\tkz@bx=\dimen274
+\tkz@by=\dimen275
+\tkz@cx=\dimen276
+\tkz@cy=\dimen277
+\tkz@dx=\dimen278
+\tkz@dy=\dimen279
+
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-base/tkz-tools-utilities.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-base/tkz-tools-arith.tex
+File: tkz-tool-arith.tex tkz-tool-arith 1.161 c
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-base/tkz-tools-base.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-base/tkz-tools-misc.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-base/tkz-tools-math.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-base/tkz-obj-points.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-base/tkz-obj-segments.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-base/tkz-obj-marks.tex
+\tkz@cntmk=\count166
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-tools-intersections.te
+x)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-tools-transformations.
+tex) (/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-lines.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-lib-symbols.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-circles.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-addpoints.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-polygons.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-vectors.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-arcs.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-sectors.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-angles.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/tkz-euclide/tkz-obj-protractor.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/circuitikz/circuitikz.sty
+Package: circuitikz 2017/05/28{} The CircuiTikz circuit drawing package version
+ 0.8.3
+
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirc.defines.tex
+\pgf@circ@res@up=\dimen280
+\pgf@circ@res@down=\dimen281
+\pgf@circ@res@zero=\dimen282
+\pgf@circ@res@left=\dimen283
+\pgf@circ@res@right=\dimen284
+\pgf@circ@res@other=\dimen285
+\pgf@circ@res@step=\dimen286
+\pgf@circ@res@temp=\dimen287
+\pgfstartlinewidth=\dimen288
+\pgf@circ@Rlen=\dimen289
+)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircutils.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircshapes.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircmonopoles.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircbipoles.tex)
@@ -640,6 +827,7 @@ File: pgflibraryarrows.code.tex 2013/09/23 v3.0.1a (rcs-revision 1.16)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirclabel.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircvoltage.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcirccurrent.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircflow.tex)
 (/usr/share/texlive/texmf-dist/tex/generic/circuitikz/pgfcircpath.tex))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryshapes.code.tex
@@ -654,14 +842,6 @@ File: tikzlibraryshapes.geometric.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
 s.geometric.code.tex
 File: pgflibraryshapes.geometric.code.tex 2008/06/26 v3.0.1a (rcs-revision 1.1)
 
-))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibraryshapes.misc.code.tex
-File: tikzlibraryshapes.misc.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
-
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibraryshape
-s.misc.code.tex
-File: pgflibraryshapes.misc.code.tex 2013/07/18 v3.0.1a (rcs-revision 1.5)
 ))
 (/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
 zlibraryshapes.symbols.code.tex
@@ -692,42 +872,38 @@ File: tikzlibraryshapes.multipart.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1
 s.multipart.code.tex
 File: pgflibraryshapes.multipart.code.tex 2010/01/07 v3.0.1a (rcs-revision 1.2)
 
-\pgfnodepartlowerbox=\box69
-\pgfnodeparttwobox=\box70
-\pgfnodepartthreebox=\box71
-\pgfnodepartfourbox=\box72
-\pgfnodeparttwentybox=\box73
-\pgfnodepartnineteenbox=\box74
-\pgfnodeparteighteenbox=\box75
-\pgfnodepartseventeenbox=\box76
-\pgfnodepartsixteenbox=\box77
-\pgfnodepartfifteenbox=\box78
-\pgfnodepartfourteenbox=\box79
-\pgfnodepartthirteenbox=\box80
-\pgfnodeparttwelvebox=\box81
-\pgfnodepartelevenbox=\box82
-\pgfnodeparttenbox=\box83
-\pgfnodepartninebox=\box84
-\pgfnodeparteightbox=\box85
-\pgfnodepartsevenbox=\box86
-\pgfnodepartsixbox=\box87
-\pgfnodepartfivebox=\box88
+\pgfnodepartlowerbox=\box70
+\pgfnodeparttwobox=\box71
+\pgfnodepartthreebox=\box72
+\pgfnodepartfourbox=\box73
+\pgfnodeparttwentybox=\box74
+\pgfnodepartnineteenbox=\box75
+\pgfnodeparteighteenbox=\box76
+\pgfnodepartseventeenbox=\box77
+\pgfnodepartsixteenbox=\box78
+\pgfnodepartfifteenbox=\box79
+\pgfnodepartfourteenbox=\box80
+\pgfnodepartthirteenbox=\box81
+\pgfnodeparttwelvebox=\box82
+\pgfnodepartelevenbox=\box83
+\pgfnodeparttenbox=\box84
+\pgfnodepartninebox=\box85
+\pgfnodeparteightbox=\box86
+\pgfnodepartsevenbox=\box87
+\pgfnodepartsixbox=\box88
+\pgfnodepartfivebox=\box89
 )))
-(/usr/share/texlive/texmf-dist/tex/generic/pgf/frontendlayer/tikz/libraries/tik
-zlibraryarrows.code.tex
-File: tikzlibraryarrows.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
-)
 (/usr/share/texlive/texmf-dist/tex/latex/amscls/amsthm.sty
-Package: amsthm 2015/03/04 v2.20.2
-\thm@style=\toks35
-\thm@bodyfont=\toks36
-\thm@headfont=\toks37
-\thm@notefont=\toks38
-\thm@headpunct=\toks39
-\thm@preskip=\skip49
-\thm@postskip=\skip50
-\thm@headsep=\skip51
-\dth@everypar=\toks40
+Package: amsthm 2017/10/31 v2.20.4
+\thm@style=\toks39
+\thm@bodyfont=\toks40
+\thm@headfont=\toks41
+\thm@notefont=\toks42
+\thm@headpunct=\toks43
+\thm@preskip=\skip55
+\thm@postskip=\skip56
+\thm@headsep=\skip57
+\dth@everypar=\toks44
 )
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 Package: mathrsfs 1996/01/01 Math RSFS package v1.0 (jk)
@@ -821,10 +997,10 @@ LaTeX Info: Redefining \textsquare on input line 1063.
 LaTeX Info: Redefining \openbox on input line 1064.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/sttools/stfloats.sty
-Package: stfloats 2016/06/28 v3.2 Improve float mechanism and baselineskip sett
+Package: stfloats 2017/03/27 v3.3 Improve float mechanism and baselineskip sett
 ings
-\@dblbotnum=\count144
-\c@dblbotnumber=\count145
+\@dblbotnum=\count167
+\c@dblbotnumber=\count168
 )
 (/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
@@ -835,78 +1011,70 @@ Package: cite 2015/02/27  v 5.5
 Package: cases 2002/05/02 ver 2.5 
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mathtools.sty
-Package: mathtools 2015/11/12 v1.18 mathematical typesetting tools
+Package: mathtools 2018/01/08 v1.21 mathematical typesetting tools
 
 (/usr/share/texlive/texmf-dist/tex/latex/tools/calc.sty
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
-\calc@Acount=\count146
-\calc@Bcount=\count147
-\calc@Adimen=\dimen270
-\calc@Bdimen=\dimen271
-\calc@Askip=\skip52
-\calc@Bskip=\skip53
+\calc@Acount=\count169
+\calc@Bcount=\count170
+\calc@Adimen=\dimen290
+\calc@Bdimen=\dimen291
+\calc@Askip=\skip58
+\calc@Bskip=\skip59
 LaTeX Info: Redefining \setlength on input line 80.
 LaTeX Info: Redefining \addtolength on input line 81.
-\calc@Ccount=\count148
-\calc@Cskip=\skip54
+\calc@Ccount=\count171
+\calc@Cskip=\skip60
 )
 (/usr/share/texlive/texmf-dist/tex/latex/mathtools/mhsetup.sty
-Package: mhsetup 2010/01/21 v1.2a programming setup (MH)
+Package: mhsetup 2017/03/31 v1.3 programming setup (MH)
 )
 LaTeX Info: Thecontrolsequence`\('isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\)'isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\['isalreadyrobust on input line 129.
 LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
-\g_MT_multlinerow_int=\count149
-\l_MT_multwidth_dim=\dimen272
-\origjot=\skip55
-\l_MT_shortvdotswithinadjustabove_dim=\dimen273
-\l_MT_shortvdotswithinadjustbelow_dim=\dimen274
-\l_MT_above_intertext_sep=\dimen275
-\l_MT_below_intertext_sep=\dimen276
-\l_MT_above_shortintertext_sep=\dimen277
-\l_MT_below_shortintertext_sep=\dimen278
+\g_MT_multlinerow_int=\count172
+\l_MT_multwidth_dim=\dimen292
+\origjot=\skip61
+\l_MT_shortvdotswithinadjustabove_dim=\dimen293
+\l_MT_shortvdotswithinadjustbelow_dim=\dimen294
+\l_MT_above_intertext_sep=\dimen295
+\l_MT_below_intertext_sep=\dimen296
+\l_MT_above_shortintertext_sep=\dimen297
+\l_MT_below_shortintertext_sep=\dimen298
 )
 (/usr/share/texlive/texmf-dist/tex/latex/enumitem/enumitem.sty
 Package: enumitem 2011/09/28 v3.5.2 Customized lists
-\labelindent=\skip56
-\enit@outerparindent=\dimen279
-\enit@toks=\toks41
-\enit@inbox=\box89
-\enitdp@description=\count150
+\labelindent=\skip62
+\enit@outerparindent=\dimen299
+\enit@toks=\toks45
+\enit@inbox=\box90
+\enitdp@description=\count173
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip57
-\LTright=\skip58
-\LTpre=\skip59
-\LTpost=\skip60
-\LTchunksize=\count151
-\LTcapwidth=\dimen280
-\LT@head=\box90
-\LT@firsthead=\box91
-\LT@foot=\box92
-\LT@lastfoot=\box93
-\LT@cols=\count152
-\LT@rows=\count153
-\c@LT@tables=\count154
-\c@LT@chunks=\count155
-\LT@p@ftn=\toks42
+\LTleft=\skip63
+\LTright=\skip64
+\LTpre=\skip65
+\LTpost=\skip66
+\LTchunksize=\count174
+\LTcapwidth=\dimen300
+\LT@head=\box91
+\LT@firsthead=\box92
+\LT@foot=\box93
+\LT@lastfoot=\box94
+\LT@cols=\count175
+\LT@rows=\count176
+\c@LT@tables=\count177
+\c@LT@chunks=\count178
+\LT@p@ftn=\toks46
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
-\multirow@colwidth=\skip61
-\multirow@cntb=\count156
-\multirow@dima=\skip62
-\bigstrutjot=\dimen281
-)
-(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
-Package: array 2016/10/06 v2.4d Tabular extension package (FMi)
-\col@sep=\dimen282
-\extrarowheight=\dimen283
-\NC@list=\toks43
-\extratabsurround=\skip63
-\backup@length=\skip64
+\multirow@colwidth=\skip67
+\multirow@cntb=\count179
+\multirow@dima=\skip68
+\bigstrutjot=\dimen301
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tools/hhline.sty
 Package: hhline 2014/10/28 v2.03 Table rule package (DPC)
@@ -926,57 +1094,57 @@ File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 (./gvv_swaroop_buck.aux)
 \openout1 = `gvv_swaroop_buck.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 123.
-LaTeX Font Info:    Try loading font information for OML+txmi on input line 123
+LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 125.
+LaTeX Font Info:    Try loading font information for OML+txmi on input line 125
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omltxmi.fd
 File: omltxmi.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 123.
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 123.
-LaTeX Font Info:    Try loading font information for OMS+txsy on input line 123
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 125.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OMS/txsy/m/n on input line 125.
+LaTeX Font Info:    Try loading font information for OMS+txsy on input line 125
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omstxsy.fd
 File: omstxsy.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 123.
-LaTeX Font Info:    Try loading font information for OMX+txex on input line 123
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for OMX/txex/m/n on input line 125.
+LaTeX Font Info:    Try loading font information for OMX+txex on input line 125
 .
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/omxtxex.fd
 File: omxtxex.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 123.
-LaTeX Font Info:    Try loading font information for U+txexa on input line 123.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Checking defaults for U/txexa/m/n on input line 125.
+LaTeX Font Info:    Try loading font information for U+txexa on input line 125.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxexa.fd
 File: utxexa.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    ... okay on input line 123.
-LaTeX Font Info:    Try loading font information for OT1+txr on input line 123.
+LaTeX Font Info:    ... okay on input line 125.
+LaTeX Font Info:    Try loading font information for OT1+txr on input line 125.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/ot1txr.fd
 File: ot1txr.fd 2000/12/15 v3.1
 )
 -- Lines per column: 50 (exact).
-LaTeX Info: Redefining \celsius on input line 123.
-Package gensymb Info: Faking symbols for \degree and \celsius on input line 123
+LaTeX Info: Redefining \celsius on input line 125.
+Package gensymb Info: Faking symbols for \degree and \celsius on input line 125
 .
 
 Package gensymb Warning: Not defining \perthousand.
 
-LaTeX Info: Redefining \ohm on input line 123.
-Package gensymb Info: Using \Omega for \ohm on input line 123.
+LaTeX Info: Redefining \ohm on input line 125.
+Package gensymb Info: Using \Omega for \ohm on input line 125.
 
 Package gensymb Warning: Not defining \micro.
 
@@ -987,43 +1155,43 @@ Package caption Info: longtable package is loaded.
 Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
 )
 Package caption Info: End \AtBeginDocument code.
-\c@lstlisting=\count157
+\c@lstlisting=\count180
 
 ABD: EveryShipout initializing macros
-\c@theorem=\count158
-\c@problem=\count159
-\c@proposition=\count160
-\c@lemma=\count161
-\c@example=\count162
-\c@definition=\count163
-\c@rem=\count164
+\c@theorem=\count181
+\c@problem=\count182
+\c@proposition=\count183
+\c@lemma=\count184
+\c@example=\count185
+\c@definition=\count186
+\c@rem=\count187
 File: iith_logo.eps Graphic file (type eps)
  <iith_logo.eps>
-LaTeX Font Info:    Calculating math sizes for size <24> on input line 239.
-LaTeX Font Info:    Try loading font information for U+txsya on input line 239.
+LaTeX Font Info:    Calculating math sizes for size <24> on input line 241.
+LaTeX Font Info:    Try loading font information for U+txsya on input line 241.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsya.fd
 File: utxsya.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyb on input line 239.
+LaTeX Font Info:    Try loading font information for U+txsyb on input line 241.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyb.fd
 File: utxsyb.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 239.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 241.
 
 (/usr/share/texlive/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
-LaTeX Font Info:    Try loading font information for U+txmia on input line 239.
+LaTeX Font Info:    Try loading font information for U+txmia on input line 241.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxmia.fd
 File: utxmia.fd 2000/12/15 v3.1
 )
-LaTeX Font Info:    Try loading font information for U+txsyc on input line 239.
+LaTeX Font Info:    Try loading font information for U+txsyc on input line 241.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/txfonts/utxsyc.fd
@@ -1031,7 +1199,7 @@ File: utxsyc.fd 2000/12/15 v3.1
 )
 File: tlc.eps Graphic file (type eps)
  <tlc.eps>
-LaTeX Font Info:    Calculating math sizes for size <14> on input line 239.
+LaTeX Font Info:    Calculating math sizes for size <14> on input line 241.
 File: iith_logo.eps Graphic file (type eps)
 
 <iith_logo.eps>
@@ -1050,13 +1218,22 @@ Underfull \hbox (badness 3977) in paragraph at lines 4--4
 \openout4 = `gvv_swaroop_buck.toc'.
 
  (./figs/components.tex
-\gnumericTableWidth=\skip65
-\gnumericTableWidthComplete=\skip66
-\gnumericMultiRowLength=\skip67
-\gnumericColA=\skip68
-\gnumericColB=\skip69
-\gnumericColC=\skip70
-) (./figs/buck.tex)
+\gnumericTableWidth=\skip69
+\gnumericTableWidthComplete=\skip70
+\gnumericMultiRowLength=\skip71
+\gnumericColA=\skip72
+\gnumericColB=\skip73
+\gnumericColC=\skip74
+) (./figs/Block_diagram.tex
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ) in font nullfont!
+Missing character: There is no ) in font nullfont!
+)
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+(./figs/buck.tex)
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
@@ -1064,29 +1241,22 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-(./figs/buck_off.tex)
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 [1
 
 
-]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+] (./figs/buck_off.tex)
 File: ./figs/pinout.eps Graphic file (type eps)
-
-<./figs/pinout.eps>
+ <./figs/pinout.eps>
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 (./figs/connections.tex
-\gnumericColD=\skip71
-\gnumericColE=\skip72
-\gnumericColF=\skip73
-\gnumericColG=\skip74
-\gnumericColH=\skip75
-\gnumericColI=\skip76
+\gnumericColD=\skip75
+\gnumericColE=\skip76
+\gnumericColF=\skip77
+\gnumericColG=\skip78
+\gnumericColH=\skip79
+\gnumericColI=\skip80
 ) (./codes/square_wave.ino
 LaTeX Font Info:    Try loading font information for OMS+txr on input line 1.
 
@@ -1095,11 +1265,11 @@ File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
 (Font)              Font shape `OMS/txsy/m/n' tried instead on input line 1.
-) [2]
+ [2])
 (./codes/sqaure_wave.py)
 File: ./figs/square.eps Graphic file (type eps)
  <./figs/square.eps>
-Overfull \hbox (37.08pt too wide) in paragraph at lines 413--414
+Overfull \hbox (37.08pt too wide) in paragraph at lines 424--425
 [][] 
  []
 
@@ -1107,12 +1277,12 @@ Overfull \hbox (37.08pt too wide) in paragraph at lines 413--414
 
 ] (./gvv_swaroop_buck.aux) ) 
 Here is how much of TeX's memory you used:
- 26241 strings out of 494946
- 595150 string characters out of 6181058
- 821377 words of memory out of 5000000
- 29086 multiletter control sequences out of 15000+600000
+ 30058 strings out of 494848
+ 679868 string characters out of 6179105
+ 934848 words of memory out of 5000000
+ 32783 multiletter control sequences out of 15000+600000
  71317 words of font info for 178 fonts, out of 8000000 for 9000
- 17 hyphenation exceptions out of 8191
- 55i,13n,67p,430b,1334s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 62 hyphenation exceptions out of 8191
+ 55i,13n,67p,421b,1511s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_swaroop_buck.dvi (4 pages, 76428 bytes).
+Output written on gvv_swaroop_buck.dvi (4 pages, 80592 bytes).

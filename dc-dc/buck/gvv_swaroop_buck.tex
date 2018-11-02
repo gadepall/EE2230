@@ -22,6 +22,8 @@
 \usepackage{listings}
 \usepackage{color}
 \usepackage{tikz}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
 \usepackage[american]{circuitikz}
 \usetikzlibrary{shapes,arrows}
 
@@ -266,7 +268,16 @@ DC-DC Converter
 %Connect one end of $22 \ohm$ resistor to pin 6(OUTPUT) of TLP350 and other end to Drain of n-MOS.
 %\end{problem}
 \section{Circuit Operation}
-The buck converter circuit is shown in Fig. \ref{fig1}.
+The buck converter block diagram and circuit are shown in Figs. \ref{fig:block} and \ref{fig1} respectively.
+\begin{figure}[!h]
+\centering
+\resizebox {\columnwidth} {!} {
+\input{./figs/Block_diagram.tex}
+}
+\caption{Block Diagram} 
+\label{fig:block}
+\end{figure}
+
 \begin{figure}[!h]
 \centering
 \resizebox {\columnwidth} {!} {

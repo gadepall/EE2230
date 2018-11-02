@@ -1,0 +1,109 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\makeatletter
+\@addtoreset{figure}{problem}
+\makeatother
+\usepackage{setspace}
+\usepackage{gensymb}
+\usepackage{xcolor}
+\usepackage{caption}
+%\usepackage{multirow}
+%\usepackage{multicolumn}
+%\usepackage{subcaption}
+%\doublespacing
+\singlespacing
+\usepackage{amsmath}
+\usepackage{multicol}
+\usepackage{enumerate}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{newfloat}
+%\usepackage{syntax}
+\usepackage{listings}
+\usepackage{color}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+  \usepackage[american]{circuitikz}
+ % \usepackage{tikz}
+
+  \begin{document}
+  \tikzstyle{block} = [rectangle, draw,
+    text width=4em, text centered, minimum height=3em]
+\tikzstyle{sum} = [draw, circle, node distance=3cm]
+\tikzstyle{input} = [coordinate]
+\tikzstyle{output} = [coordinate]
+\tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
+
+     \begin{figure}
+       \centering  
+       \begin{circuitikz}
+      \draw (0,0) node[rectangle, draw,
+    text width=5em, text centered, minimum 
+    height=3em]{{\textbf{Pulse 
+      Generator}}}
+      
+      (4,0) node[and port] (and1) {}
+      (and1.in 1) -- (and1.in 2)
+      (1.2,0) to [short] (2.7,0)
+      (11,0.3) node[and port] (and2) {}
+      (and1.out) to [R,l=$R$] (and2.in 2)
+      (8,0) to [short] (8,-1)
+      to [D] (5,-1)
+      to [short] (5,0)  
+      (8.5,0) to [C,l=$C$] (8.5,-1.5) 
+      to (8.5,-1.5)node[ground] {} 
+      (2,0) to [short] (2,1)
+      to (9.6,1)
+      to (and2.in 1)
+      %[->] (and2.out) -- (12,0.3)
+     
+     
+     (7,-4) node[and port] (and3) {}
+      (and3.in 1) -- (and3.in 2)
+      (2,0) to [short] (2,-4)
+      to [short] (3,-4)
+      (3.5,-4) node[not port] (not){}
+      (not.out) to (5.5,-4)
+      (15,-3.7) node[and port] (and4) {}
+      (and3.out) to [R,l=$R$] (and4.in 2)
+      (12,-4) to [short] (12,-5)
+      to [D] (8,-5)
+      to [short] (8,-4)  
+      (13,-4) to [C,l=$C$] (13,-5.5) 
+      to (13,-5.5)node[ground] {}
+      (4.5,-4) to [short] (4.5,-3)
+      to [short] (13.5,-3)
+      to [short] (and4.in 1)
+      [->] (and2.out) -- node {1} (12,0.3)
+      [->] (and4.out) -- node {2} (16,-3.75)
+      
+      
+      
+    %to [D,l=$D2$] (5.5,1)
+    %to [D,l=$D3$] (4,-0.1)
+    %(2.5,1) to [D,l=$D4$] (4,-0.1)
+    %to [short] (4,-0.6)
+    %to [short] (2,-0.6)
+    %to [short] (2,-0.1)
+    %(5.5,1) to [short] (6.5,1)
+    %(2.5,1) to [short] (2.5,-3)
+    %to [short] (9,-3)
+    %(6,1) to [C,l=$470 \mu F$] (6,-3)
+    
+    %(7,1) node[block]{{\textbf{1084}}}
+    %(7.6,1) to [short] (9,1)
+    %to [open, v=$5V $] (9,-3)
+    %to [short] (2.5,-3)
+    
+    
+    
+    %to [short] (7,3)
+    %to [L=$L$,i>^=$I_L$, v=$v_{L}$] (3,3)
+    %to[C=$C$,i>^=$I_C$,v=$v_{C}$] (3,0)
+    %(3,3) to [short] (5,3)
+    %to [R=$R_L$,i>^=$I_o$,v=$v_{o}$] (5,0)
+    %to[short] (0,0)
+    ;  
+    \end{circuitikz}
+    \caption{Dead-Band circuit diagram} \label{fig1}
+   \end{figure}
+\end{document}
