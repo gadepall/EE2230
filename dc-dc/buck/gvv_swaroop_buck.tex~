@@ -466,6 +466,6 @@ Calculate the cut-off frequency for the filter in Fig. \ref{fig6}.
    Find $V_{o}$. 
    \end{problem}
 \begin{problem}
-Explain our results through a Python script.
+Explain your results through a Python script.
 \end{problem}
  \end{document}
