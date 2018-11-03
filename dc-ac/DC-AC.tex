@@ -252,7 +252,7 @@ DC-AC Converter
 
 %\section{Buck Converter}
 \section{Components}
-\begin{table}[!h]
+\begin{table}[!ht]
 \centering
 \input{./figs/components.tex}
 \caption{}
@@ -260,7 +260,7 @@ DC-AC Converter
 \end{table}
 \section{Circuit Operation}
 The DC-AC converter Block diagram and circuit are shown in Fig. \ref{fig1} and Fig. \ref{fig2}
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \centering
 \resizebox {\columnwidth} {!} {
 \input{./figs/circuit_fullbridge.tex}
@@ -268,7 +268,7 @@ The DC-AC converter Block diagram and circuit are shown in Fig. \ref{fig1} and F
 \caption{DC-AC converter} 
 \label{fig1}
 \end{figure}
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \centering
 \resizebox {\columnwidth} {!} {
 \input{./figs/blockdiagram.tex}
@@ -281,7 +281,7 @@ The DC-AC converter Block diagram and circuit are shown in Fig. \ref{fig1} and F
 Generate 4 dc sources of +12 V and -5 V each using the voltage regulator circuit as shown in the Fig.\ref{fig3}  
   \end{problem}
 
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \centering
 \resizebox {\columnwidth} {!} {
 \input{./figs/regulator_circuit.tex}
@@ -319,7 +319,7 @@ Assemble the DC-AC circuit according to Figs. \ref{fig1},\ref{fig2}, \ref{fig5} 
 \end{problem}
 %\section{Circuit Diagram}
 %The circuit diagram is shown in \ref{fig1}
-\begin{figure}[!h]
+\begin{figure}[!ht]
 \centering
 \includegraphics[width=\columnwidth]{./figs/pinout.eps}
 \caption{ TLP350}  
@@ -329,7 +329,7 @@ Assemble the DC-AC circuit according to Figs. \ref{fig1},\ref{fig2}, \ref{fig5} 
 %\subsection{\textbf{Gate Driver circuit}}
 %The pin description for Opto coupler(TLP350) is shown in fig \ref{fig4}
 %Made connections as per the fig \ref{fig2}    
-\begin{table}[!h]
+\begin{table}[!ht]
 \centering
 \resizebox {\columnwidth} {!} {
 \input{./figs/connections.tex}
@@ -350,5 +350,8 @@ Design a $4^{th}$ order RC Low pass filter with cut-off frequency 50 Hz and obse
 \end{problem} 
 \begin{problem}
 Find the output of the lowpass filter designed in \ref{prob:problem3.3} with input as obtained from the result of \ref{prob:problem3.1}. What do you observe? \label{prob:problem3.4}
+\end{problem}
+\begin{problem}
+Demonstrate your results through a Python script.
 \end{problem}
 \end{document}
