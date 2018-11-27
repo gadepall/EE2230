@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Components}{1}
+\contentsline {section}{\numberline {2}Connections}{1}
+\contentsline {section}{\numberline {3}Regulator}{2}
+\contentsline {subsection}{\numberline {3.1}Ripple Filter}{2}
+\contentsline {subsection}{\numberline {3.2}Voltage Regulator}{2}
+\contentsline {section}{\numberline {4}Audio amplification}{2}
