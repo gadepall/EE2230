@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.6.30)  25 SEP 2019 09:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.6.30)  25 SEP 2019 11:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1307,44 +1307,51 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-Overfull \hbox (3.02618pt too wide) detected at line 350
+Overfull \hbox (3.02618pt too wide) detected at line 353
  []$[] \OT1/txr/m/n/12 = (7 \OMS/txsy/m/n/12 ^^B \OT1/txr/m/n/12 14285 + 6)\OML
 /txmi/m/it/12 a \OT1/txr/m/n/12 + [] \OML/txmi/m/it/12 b \OT1/txr/m/n/12 + [] \
 OML/txmi/m/it/12 c$ 
  []
 
 
-Underfull \vbox (badness 3354) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 File: ./figs/prmo_2018_5.eps Graphic file (type eps)
 
-<./figs/prmo_2018_5.eps> [2]
-File: ./figs/prmo_2018_7.eps Graphic file (type eps)
- <./figs/prmo_2018_7.eps>
-File: ./figs/prmo_2018_8.eps Graphic file (type eps)
- <./figs/prmo_2018_8.eps>
-File: ./figs/prmo_2018_10.eps Graphic file (type eps)
+<./figs/prmo_2018_5.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<./figs/prmo_2018_10.eps>
+ [2]
+File: ./figs/prmo_2018_7.eps Graphic file (type eps)
+
+<./figs/prmo_2018_7.eps>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+File: ./figs/prmo_2018_8.eps Graphic file (type eps)
+
+<./figs/prmo_2018_8.eps>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [3]
-Underfull \hbox (badness 10000) in paragraph at lines 498--501
+File: ./figs/prmo_2018_10.eps Graphic file (type eps)
+
+<./figs/prmo_2018_10.eps>
+Underfull \hbox (badness 10000) in paragraph at lines 501--504
 []\OT1/txr/m/n/12 Determine the num-ber of 8-tuples
  []
 
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 File: ./figs/prmo_2018_13.eps Graphic file (type eps)
-<./figs/prmo_2018_13.eps>
+
+<./figs/prmo_2018_13.eps> [4]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4]
 File: ./figs/prmo_2018_17.eps Graphic file (type eps)
 
 <./figs/prmo_2018_17.eps>
-LaTeX Font Info:    Try loading font information for OMS+txr on input line 624.
+LaTeX Font Info:    Try loading font information for OMS+txr on input line 627.
 
 
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/oms
@@ -1352,43 +1359,52 @@ txr.fd
 File: omstxr.fd 2000/12/15 v3.1
 )
 LaTeX Font Info:    Font shape `OMS/txr/m/n' in size <12> not available
-(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 624.
-File: ./figs/prmo_2018_21.eps Graphic file (type eps)
- <./figs/prmo_2018_21.eps>
+(Font)              Font shape `OMS/txsy/m/n' tried instead on input line 627.
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [5]
-(./figs/prmo_2018_28.tex
+File: ./figs/prmo_2018_21.eps Graphic file (type eps)
+
+<./figs/prmo_2018_21.eps> (./figs/prmo_2018_28.tex
 \gnumericTableWidth=\skip66
 \gnumericTableWidthComplete=\skip67
 \gnumericMultiRowLength=\skip68
 \gnumericColA=\skip69
 \gnumericColB=\skip70
 \gnumericColC=\skip71
-)
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+) [6]
 File: ./figs/prmo_2018_29.eps Graphic file (type eps)
 
-<./figs/prmo_2018_29.eps> [6]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 784.
+<./figs/prmo_2018_29.eps>
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 787.
  [7
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 784.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 787.
  (./gvv_lm_386.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 784.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 784.
-Package rerunfilecheck Info: File `gvv_lm_386.out' has not changed.
-(rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 787.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 787.
+
+
+Package rerunfilecheck Warning: File `gvv_lm_386.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `gvv_lm_386.out':
+(rerunfilecheck)             Before: D41D8CD98F00B204E9800998ECF8427E;0
+(rerunfilecheck)             After:  239684364ADCD2CFF78AF8ADF3E899BF;51.
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
  ) 
 Here is how much of TeX's memory you used:
- 24308 strings out of 492615
- 479748 string characters out of 6118492
- 587901 words of memory out of 5000000
- 27763 multiletter control sequences out of 15000+600000
+ 24309 strings out of 492615
+ 479774 string characters out of 6118492
+ 586901 words of memory out of 5000000
+ 27764 multiletter control sequences out of 15000+600000
  67844 words of font info for 167 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 54i,16n,67p,796b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,16n,67p,796b,477s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on gvv_lm_386.dvi (7 pages, 67540 bytes).
+Output written on gvv_lm_386.dvi (7 pages, 67988 bytes).
