@@ -1,0 +1,6 @@
+\contentsline {section}{\numberline {1}Equivalent Circuit of LM386}{1}{section.1}% 
+\contentsline {section}{\numberline {2} Common Collector(Emitter Follower) Buffer}{1}{section.2}% 
+\contentsline {section}{\numberline {3}Differential amplifier}{1}{section.3}% 
+\contentsline {section}{\numberline {4}Current Mirror}{2}{section.4}% 
+\contentsline {section}{\numberline {5}Small Signal Analysis}{2}{section.5}% 
+\contentsline {section}{\numberline {6}Gain Calculation}{3}{section.6}% 
