@@ -1,0 +1,63 @@
+\documentclass{article}
+
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{siunitx}
+\usetikzlibrary{calc}
+%\ctikzset{bipoles/thickness=1}
+%\ctikzset{bipoles/length=0.8cm}
+\ctikzset{bipoles/diode/height=.3}
+\ctikzset{bipoles/diode/width=.2}
+\begin{document}
+
+\begin{figure}
+  \begin{center}
+    \begin{circuitikz}[american currents]
+    \draw
+    (0,0) node[pnp] (pnp){}
+    (2,-2) node[npn] (npn1){}
+    (-0.8,-2) node[npn] (npn2){}
+    %(-0.8,2) to[full diode] (d1) (-0.8,1)
+    (pnp.C) to [short] (0,-2)to [short] (npn1.B)
+    (npn1.C) to [short] (2,0.8)
+    (pnp.E) to [short] (2,0.8)   (2,1)to [short] (2,0.8)node[anchor =west] {$i_e$}
+    (npn2.E) to [short,*-*] (npn1.E) to [short,-o] (2.5,-2.8) node[anchor =west] {Gnd}
+    (npn2.C) to [short,-*] (pnp.B) 
+     (-0.85,1)to[full diode](pnp.B) 
+        (-0.85,1)to[short] (-0.85,2) 
+            to[full diode]  (-0.85,1) to [short,-*] (-0.85,2.5)
+            (-0.85,4.5) to [I,*-*] (-0.85,2.5) to [short] (1.15,2.5) (2,2.5) node[npn] (npn3){} (npn3.E) to [short] (2,1)
+    %(d1.n) to [short] (pnp.B)
+  (-0.85,1)to [short] (-2,1)  to [R =$R_f$](-3.5,1) node[anchor =east] {//}
+  (-0.85,1)to[short,-*] (2,1) to [short,-o] (3,1)node[anchor =west] {Out}
+  node[anchor =north] {$v$} node[anchor =south] {5}
+  (npn3.C) to [short,-*] (2,4.5) to[short] (-0.85,4.5)to[short](-3.5,4.5)node[anchor =east] {//}
+  (2,4.5) to [short,-o] (3,4.5)node[anchor =west] {$V_{cc}$}node[anchor =south] {6}
+  (npn2.B)to [short] (-3.5,-2) node[anchor =east] {//}
+    (npn2.E)to [short] (-3.5,-2.8) node[anchor =east] {//}
+    (1,-0.8) circle(1.8)  (3,-0.8)node[anchor =west] {$Compound$ $pnp$ $transistor$}
+    (npn3.C) node[anchor =north west] {$Q7$}
+    (npn3.C) node[anchor =north west] {$Q7$}
+    (npn1.C) node[anchor =north west] {$Q9$}
+    (npn1.C) node[anchor =north west] {$Q9$}
+    (npn2.C) node[anchor =north east] {$Q10$}
+    (npn2.C) node[anchor =north east] {$Q10$}
+    (pnp.C) node[anchor =south east] {$Q8$}
+    (pnp.C) node[anchor =south east] {$Q8$}
+    (npn1.E)node[anchor =south west] {$i_c$}
+    (pnp.B)  node[anchor =south west] {$i_b$}
+  
+    
+    
+    ;
+    
+    
+    
+    
+    
+      \end{circuitikz}
+   
+  \end{center}
+\end{figure}
+
+\end{document}

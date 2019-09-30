@@ -1,0 +1,59 @@
+\documentclass{article}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\newcommand{\approxtext}[1]{\ensuremath{\stackrel{\text{#1}}{\approx}}}
+
+\begin{document}
+  \begin{figure}[h!]
+    \begin{circuitikz} 
+
+\draw (-.84,0) node[npn, xscale=-1](npn5){}                     %Q6
+  (npn5.base) node[] {}
+  (npn5.collector) node[] {c}
+  (npn5.emitter) node[] {};
+  
+\draw (.84,0) node[npn](npn6){}                     %Q5
+  (npn6.base) node[] {}
+  (npn6.collector) node[] {c}
+  (npn6.emitter) node[] {};  
+  
+\draw (npn6.emitter) to[short] (npn5.emitter);  
+\draw (npn5.collector) to[short] (0,0.77);  
+\draw (npn5.base) to[short] (0,0.77);
+
+\draw (0,-1) to[short] (0,-0.77);
+\draw (0.25,-1) to[short] (-0.25,-1);
+\draw (0.25,-1) to[short] (0,-1.4);
+\draw (0,-1.4) to[short] (-0.25,-1);
+
+\draw (0.84,2) to[short] (npn6.collector);
+\draw (-0.84,2) to[short] (npn5.collector);
+  
+\draw (0.84,2) node(anchor=east)[xshift=-3]{//};
+\draw (-0.84,2) node(anchor=east)[xshift=-3]{//};  
+  
+\draw (0.85,0) node(anchor=east){Q6};  
+\draw (-0.85,0) node(anchor=east){Q5}; 
+
+\draw (-0.1,-0.1) node(anchor=east){\tiny +};
+\draw (-0.1,-0.67) node(anchor=east){\tiny -};   
+\draw (-0.1,-0.4) node(anchor=east){\scriptsize $V_b$};  
+  
+\draw [arrows=->] (0.84,1.6) -- (0.84,1.2);
+\draw [arrows=->] (-0.84,1.6) -- (-0.84,1.2); 
+\draw [arrows=->] (-0.5,0.77) -- (-0.2,0.77);
+  
+\draw (-1,1.42) node(anchor=east){\scriptsize $I_5$};
+\draw (1,1.42) node(anchor=east){\scriptsize $I_6$};  
+\draw (-0.2,1) node(anchor=east){\scriptsize I \approxtext{} 0};  
+  
+\filldraw [black] (npn5.base) circle (2pt);  
+\filldraw [black] (npn5.collector) circle (2pt);
+\filldraw [black] (0,-0.77) circle (2pt);
+  
+    \end{circuitikz}
+  \end{figure}
+\end{document}

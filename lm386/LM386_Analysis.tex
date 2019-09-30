@@ -1,0 +1,456 @@
+\documentclass[journal,12pt,twocolumn]{IEEEtran}
+\usepackage{setspace}
+\usepackage{gensymb}
+\usepackage{caption}
+%\usepackage{multirow}
+%\usepackage{multicolumn}
+%\usepackage{subcaption}
+%\doublespacing
+\singlespacing
+\usepackage{csvsimple}
+\usepackage{amsmath}
+\usepackage{multicol}
+%\usepackage{enumerate}
+\usepackage{amssymb}
+%\usepackage{graphicx}
+\usepackage{newfloat}
+%\usepackage{syntax}
+\usepackage{listings}
+%\usepackage{iithtlc}
+\usepackage{color}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usetikzlibrary{shapes,arrows}
+\usepackage{circuitikz}
+
+
+
+%\usepackage{graphicx}
+%\usepackage{amssymb}
+%\usepackage{relsize}
+%\usepackage[cmex10]{amsmath}
+%\usepackage{mathtools}
+%\usepackage{amsthm}
+%\interdisplaylinepenalty=2500
+%\savesymbol{iint}
+%\usepackage{txfonts}
+%\restoresymbol{TXF}{iint}
+%\usepackage{wasysym}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage{txfonts}
+\usepackage{stfloats}
+\usepackage{epstopdf}
+\usepackage{cite}
+\usepackage{cases}
+\usepackage{mathtools}
+\usepackage{caption}
+\usepackage{enumerate}	
+\usepackage{enumitem}
+\usepackage{amsmath}
+%\usepackage{xtab}
+\usepackage{longtable}
+\usepackage{multirow}
+%\usepackage{algorithm}
+%\usepackage{algpseudocode}
+\usepackage{enumitem}
+\usepackage{mathtools}
+\usepackage{hyperref}
+%\usepackage[framemethod=tikz]{mdframed}
+\usepackage{listings}
+    %\usepackage[latin1]{inputenc}                                 %%
+    \usepackage{color}                                            %%
+    \usepackage{array}                                            %%
+    \usepackage{longtable}                                        %%
+    \usepackage{calc}                                             %%
+    \usepackage{multirow}                                         %%
+    \usepackage{hhline}                                           %%
+    \usepackage{ifthen}                                           %%
+  %optionally (for landscape tables embedded in another document): %%
+    \usepackage{lscape}     
+
+
+\usepackage{url}
+\def\UrlBreaks{\do\/\do-}
+
+
+%\usepackage{stmaryrd}
+
+
+%\usepackage{wasysym}
+%\newcounter{MYtempeqncnt}
+\DeclareMathOperator*{\Res}{Res}
+%\renewcommand{\baselinestretch}{2}
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\renewcommand\thesubsubsection{\thesubsection.\arabic{subsubsection}}
+
+\renewcommand\thesectiondis{\arabic{section}}
+\renewcommand\thesubsectiondis{\thesectiondis.\arabic{subsection}}
+\renewcommand\thesubsubsectiondis{\thesubsectiondis.\arabic{subsubsection}}
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+%\lstset{
+%language=C,
+%frame=single, 
+%breaklines=true
+%}
+
+%\lstset{
+	%%basicstyle=\small\ttfamily\bfseries,
+	%%numberstyle=\small\ttfamily,
+	%language=Octave,
+	%backgroundcolor=\color{white},
+	%%frame=single,
+	%%keywordstyle=\bfseries,
+	%%breaklines=true,
+	%%showstringspaces=false,
+	%%xleftmargin=-10mm,
+	%%aboveskip=-1mm,
+	%%belowskip=0mm
+%}
+
+%\surroundwithmdframed[width=\columnwidth]{lstlisting}
+\def\inputGnumericTable{}                                 %%
+\lstset{
+%language=C,
+frame=single, 
+breaklines=true,
+columns=fullflexible
+}
+ 
+
+\begin{document}
+%
+\tikzstyle{block} = [rectangle, draw,
+    text width=3em, text centered, minimum height=3em]
+\tikzstyle{sum} = [draw, circle, node distance=3cm]
+\tikzstyle{input} = [coordinate]
+\tikzstyle{output} = [coordinate]
+\tikzstyle{pinstyle} = [pin edge={to-,thin,black}]
+
+\theoremstyle{definition}
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{problem}{Problem}
+\newtheorem{proposition}{Proposition}[section]
+\newtheorem{lemma}{Lemma}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{example}{Example}[section]
+\newtheorem{definition}{Definition}[section]
+%\newtheorem{algorithm}{Algorithm}[section]
+%\newtheorem{cor}{Corollary}
+\newcommand{\BEQA}{\begin{eqnarray}}
+\newcommand{\EEQA}{\end{eqnarray}}
+\newcommand{\define}{\stackrel{\triangle}{=}}
+\bibliographystyle{IEEEtran}
+%\bibliographystyle{ieeetr}
+\providecommand{\nCr}[2]{\,^{#1}C_{#2}} % nCr
+\providecommand{\nPr}[2]{\,^{#1}P_{#2}} % nPr
+\providecommand{\mbf}{\mathbf}
+\providecommand{\pr}[1]{\ensuremath{\Pr\left(#1\right)}}
+\providecommand{\qfunc}[1]{\ensuremath{Q\left(#1\right)}}
+\providecommand{\sbrak}[1]{\ensuremath{{}\left[#1\right]}}
+\providecommand{\lsbrak}[1]{\ensuremath{{}\left[#1\right.}}
+\providecommand{\rsbrak}[1]{\ensuremath{{}\left.#1\right]}}
+\providecommand{\brak}[1]{\ensuremath{\left(#1\right)}}
+\providecommand{\lbrak}[1]{\ensuremath{\left(#1\right.}}
+\providecommand{\rbrak}[1]{\ensuremath{\left.#1\right)}}
+\providecommand{\cbrak}[1]{\ensuremath{\left\{#1\right\}}}
+\providecommand{\lcbrak}[1]{\ensuremath{\left\{#1\right.}}
+\providecommand{\rcbrak}[1]{\ensuremath{\left.#1\right\}}}
+\theoremstyle{remark}
+\newtheorem{rem}{Remark}
+\newcommand{\sgn}{\mathop{\mathrm{sgn}}}
+%\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\res}[1]{\Res\displaylimits_{#1}} 
+\providecommand{\norm}[1]{\lVert#1\rVert}
+\providecommand{\mtx}[1]{\mathbf{#1}}
+%\providecommand{\mean}[1]{E\left[ #1 \right]}
+\providecommand{\fourier}{\overset{\mathcal{F}}{ \rightleftharpoons}}
+%\providecommand{\hilbert}{\overset{\mathcal{H}}{ \rightleftharpoons}}
+\providecommand{\system}{\overset{\mathcal{H}}{ \longleftrightarrow}}
+	%\newcommand{\solution}[2]{\textbf{Solution:}{#1}}
+\newcommand{\solution}{\noindent \textbf{Solution: }}
+\newcommand{\myvec}[1]{\ensuremath{\begin{pmatrix}#1\end{pmatrix}}}
+\providecommand{\dec}[2]{\ensuremath{\overset{#1}{\underset{#2}{\gtrless}}}}
+\DeclarePairedDelimiter{\ceil}{\lceil}{\rceil}
+%\numberwithin{equation}{section}
+%\numberwithin{problem}{subsection}
+%\numberwithin{definition}{subsection}
+\makeatletter
+\@addtoreset{figure}{section}
+\makeatother
+\let\StandardTheFigure\thefigure
+%\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
+\renewcommand{\thefigure}{\thesection}
+%\numberwithin{figure}{subsection}
+%\numberwithin{equation}{subsection}
+%\numberwithin{equation}{section}
+%\numberwithin{equation}{problem}
+%\numberwithin{problem}{subsection}
+\numberwithin{problem}{section}
+%%\numberwithin{definition}{subsection}
+%\makeatletter
+%\@addtoreset{figure}{problem}
+%\makeatother
+\makeatletter
+\@addtoreset{table}{section}
+\makeatother
+\let\StandardTheFigure\thefigure
+\let\StandardTheTable\thetable
+\let\vec\mathbf
+%%\renewcommand{\thefigure}{\theproblem.\arabic{figure}}
+%\renewcommand{\thefigure}{\theproblem}
+%%\numberwithin{figure}{section}
+%%\numberwithin{figure}{subsection}
+\def\putbox#1#2#3{\makebox[0in][l]{\makebox[#1][l]{}\raisebox{\baselineskip}[0in][0in]{\raisebox{#2}[0in][0in]{#3}}}}
+     \def\rightbox#1{\makebox[0in][r]{#1}}
+     \def\centbox#1{\makebox[0in]{#1}}
+     \def\topbox#1{\raisebox{-\baselineskip}[0in][0in]{#1}}
+     \def\midbox#1{\raisebox{-0.5\baselineskip}[0in][0in]{#1}}
+\vspace{3cm}
+\title{ 
+%	\logo{
+Gain Analysis for LM386 Audio Amplifer 
+%	}
+}
+\author{ Nachiket Chouhan and N. Dileep Chandra $^{*}$% <-this % stops a space
+	\thanks{*The author is with the Department
+		of Electrical Engineering, Indian Institute of Technology, Hyderabad
+		502285 India e-mail:  gadepall@iith.ac.in. All solutions in this manual is released under GNU 
+GPL.  Free and open source.}
+	
+}
+\maketitle
+\tableofcontents
+\bigskip
+\renewcommand{\thefigure}{\theenumi}
+\renewcommand{\thetable}{\theenumi}
+\begin{abstract}
+This manual provides the gain analysis for the LM386 audio amplifier. 
+\end{abstract}
+
+\section{Equivalent Circuit of LM386}
+%\begin{enumerate}[label=\arabic*]
+\begin{enumerate}[label=\thesection.\arabic*,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+%\begin{figure}[!ht]
+%\centering
+%\includegraphics[width=\columnwidth]{LM386int.eps}
+%\caption{}
+%\label{fig:1}
+%\end{figure}
+
+\begin{figure}[!ht]
+%\begin{center}
+\centering	
+%\includegraphics[width=\columnwidth]{./figs/right_angle_tri.tex}
+\resizebox{\columnwidth}{!}{\input{./figs/orig.tex}}
+%\vspace*{-10cm}
+%\end{center}
+\caption{LM386 Amplifier}
+\label{fig:orig}	
+\end{figure}
+
+
+\section{ Common Collector(Emitter Follower) Buffer}
+
+\numberwithin{equation}{enumi}
+
+\item What is the gain of Common collector transistor amplifier?\\
+\solution 
+The voltage gain of amplifier in CC state is a little less than 1.
+\begin{figure}[!ht]
+\centering	
+\resizebox{\columnwidth}{!}{\input{./figs/cc.tex}}
+\caption{Common Collector Amplifier}
+\label{fig:cc}	
+\end{figure}
+
+\item What is the use of Q1 and Q2 in the internal circuit?\\
+\solution
+The first block is a PNP Emitter Follower amplifier (Q1, Q2), it sets the input impedance and defines the DC operation points, raising the input voltages off the ground so the circuit will accept negative input signal down to -0.4 V. Both 50k input resistors (R1, R3) create the path to ground of the base current, the input needs to be coupled so not to disturb the internal biasing, hence the input impedance is dominated by these resistors and set to 50K.
+%
+\begin{figure}[!ht]
+\centering	
+\resizebox{\columnwidth}{!}{\input{./figs/ccdiff.tex}}
+\caption{Common Collector-Differential Amplifier}
+\label{fig:ccdiff}	
+\end{figure}
+\end{enumerate}
+
+
+\section{Differential amplifier}
+\begin{enumerate}[label=\thesection.\arabic*,ref=\thesection.\theenumi]
+\numberwithin{equation}{enumi}
+\item What is a differential amplifier?\\
+\solution The differential amplifier can be considered as an analog circuit which consists of two inputs and one output. The differential amplifier circuit can be represented as shown in the figure below.\\
+\item What is the output of a differential amplifier?\\
+\solution The output voltage of a differential amplifier is proportional to the difference between the two input voltages. This can be represented in equation form as follows:
+Differential Amplifier Gain $$G = A(V_{b3}-V_{b4})$$
+where $V_{b3}$ and $V_{b3}$ are input base voltages to Q3 and Q4 of differential amplifier and A is the gain of individual amplifiers,assuming them to be identical.\\
+
+
+\item What is the output of the differential amplifier in the above circuit?\\
+
+ \solution The gain is 1 in this case because voltage drop across base-emitter of transistors Q1,Q2,Q3 ad Q4 is same and all are CC transistors.Therefoere, the voltage drop across $R_{e}$ will be same as difference between the input voltages.\\\textit{(Note :Section 1 we mentioned gain of CC transistor amplifier is almost 1.)}\\
+\begin{figure}[!ht]
+\centering	
+\resizebox{\columnwidth}{!}{\input{./figs/diff.tex}}
+\caption{Differential Amplifier}
+\label{fig:diff}	
+\end{figure}
+\end{enumerate}
+% \begin{figure}[!ht]
+%\centering
+%\includegraphics[width=0.7\columnwidth]{./figs/LM3662.eps}
+%\caption{}
+%\label{fig:1}
+%\end{figure}
+
+%\end{enumerate}
+
+\section{Current Mirror}
+\begin{enumerate}[label=\thesection.\arabic*,ref=\thesection.\theenumi]
+\item What is a Current mirror?\\
+\solution Current mirror circuits generally consist two main transistor, although other devices such as FETs can be used. The current mirror circuit gains its name because it copies or mirrors the current flowing in one active device in another, keeping the output current constant regardless of loading.
+\item Comment about how the current mirror works in the IC.\\
+\solution
+Q5 and Q6 form a current mirror.The differential amplifier is biased by the current mirror.A current mirror is a circuit block which functions to produce a copy of the current flowing into or out of an input terminal by replicating the current in an output terminal.\\
+This can be proved by,
+\bigskip
+\vspace{-1em}
+$$V_{be(Q5)}=V_{be(Q6)}=V_b$$\\
+\vspace{-1em}
+$$I_c=I_{cs}e^{V_b/V_t}$$\\
+\vspace{-1em}
+$$I_{c5}=I_{c6}$$\\
+\vspace{-0.5em}
+Since the two transistors are matched,\\
+\vspace{-1em}
+$$I_{E5}=I_{E6}$$\\
+\vspace{-0.5em}
+Neglecting the base currents by assuming large $\beta$ .\\
+\vspace{-1em}
+$$I_5=I_6$$
+
+\begin{figure}[!ht]
+\centering	
+\resizebox{\columnwidth}{!}{\input{./figs/cmirror.tex}}
+\caption{Current Mirror}
+\label{fig:cmirror}	
+\end{figure}
+
+% \begin{figure}[!ht]
+%\centering
+%\includegraphics[width=0.7\columnwidth]{./figs/LM3863.eps}
+%\caption{}
+%\label{fig:1}
+%\end{figure}
+
+\end{enumerate}
+
+
+
+
+
+\section{Small Signal Analysis}
+\begin{enumerate}[label=\thesection.\arabic*,ref=\thesection.\theenumi]
+\item Draw the small signal equivalent of the internal circuit excluding the BJTs.\\
+
+\solution Fig. 5.1
+
+\begin{figure}[!ht]
+\centering	
+\resizebox{\columnwidth}{!}{\input{./figs/smallsig.tex}}
+\caption{Current Mirror: Small Signal Analysis}
+\label{fig:smallsig}	
+\end{figure}
+%\begin{figure}[!ht]
+%\centering
+%\includegraphics[width=0.7\columnwidth]{./figs/LM3866.eps}
+%\caption{}
+%\label{fig:2}
+%\end{figure}
+
+\item Derive the relation between input voltage(across differential amplifier) and output voltage.\\
+\solution
+The current mirror forces the currents on both halves of the
+differential amplifier to be equal: both dc and ac components.\\
+Consequently, the currents i at the emitters of Q3 and Q4 must
+be the same, as shown in Fig.5.6.\\ Due to the mirror, the current through $R_{f} = 2 i$(approx) , neglecting the current in the two $15k\ohm$ resistors (which are large impedances
+relative to the other parts of the circuit). Therefore,\\
+$$\frac{v-v_{d}}{R_{f}}=2i$$   
+
+\item Given the class AB amplifier what will be the $\beta$ for the compund pnp transistor in terms of individual $\beta$?
+
+\begin{figure}[!ht]
+\centering	
+\resizebox{\columnwidth}{!}{\input{./figs/classab.tex}}
+\caption{Class AB Amplifier}
+\label{fig:classab}	
+\end{figure}
+%\begin{figure}[!ht]
+%  \centering
+% 
+%    \includegraphics[width=0.4\textwidth]{./figs/LM3867.eps}
+%
+%\caption{}
+%\label{fig:1}
+%\end{figure}
+\solution
+Here,
+$$\beta = \beta_{Q8} \beta_{Q9}$$  which is easy to show starting with
+$i_{c8}=\beta_{Q8}i_{b8}$ and $i_{c9}=\beta_{Q9}i_{b9}$ . Compounding pnp’s was done in
+early IC’s to improve the traditionally poor performance of pnp
+transistors wrt frequency response, etc. 
+
+\begin{figure}[!ht]
+\centering	
+\resizebox{\columnwidth}{!}{\input{./figs/compound.tex}}
+\caption{Compound PNP}
+\label{fig:compound}	
+\end{figure}
+%
+%\begin{figure}[!ht]
+%  \centering
+% 
+%    \includegraphics[width=0.5\textwidth]{./figs/LM3868.eps}
+%
+%\caption{}
+%\label{fig:1}
+%\end{figure}
+\end{enumerate}
+
+\section{Gain Calculation}
+\begin{enumerate}[label=\thesection.\arabic*,ref=\thesection.\theenumi]
+\item The class amplifier will amplify v such that we can assume $v>>v_{d}$. Derive the gain of the IC assuming the values of resistors given in the internal circuit.\\
+\solution
+\begin{figure}[!ht]
+\centering	
+\resizebox{\columnwidth}{!}{\input{./figs/ampgain.tex}}
+\caption{Amplifier Gain}
+\label{fig:ampgain}	
+\end{figure}
+%\begin{figure}[!ht]
+%  \centering
+% 
+%    \includegraphics[width=0.5\textwidth]{./figs/LM3865.eps}
+%
+%\caption{}
+%\label{fig:6}
+%\end{figure}
+
+After amplification by class AB amplifier,since we can assume $v>>v_{d}$ \\
+Therefore , $$\frac{v}{R_{f}}=2i$$ \\
+Also from small signal model we got,
+
+   $$ \frac{v_{d}}{R_{e}}=2i
+$$
+From the above equations we get Gain, $$G=\frac{2 R_{f}}{R_{e}}$$\\
+Substituting values from the IC we get $$G=\frac{2 \times 15k}{150+1350} =20$$    
+
+\end{enumerate}
+\end{document}

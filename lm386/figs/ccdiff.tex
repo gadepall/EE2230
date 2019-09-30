@@ -1,0 +1,70 @@
+%\documentclass{article}
+%\usepackage{siunitx}
+%\usepackage{tikz}
+%\usepackage{circuitikz}
+%
+%\begin{document}
+%\begin{figure}[h!]
+\begin{circuitikz}
+
+%left side part
+  \draw (-1,0) node[pnp](pnp1){}            %Q3
+  (pnp1.base) node[] {}
+  (pnp1.collector) node[] {}
+  (pnp1.emitter) node[] {};
+  \draw (-1,0) node(anchor=east){Q3};
+  \draw (pnp1.base) to[short] (-1.85,-0.5);
+  \draw (-1.85,-.79) node[pnp](pnp2) {}                  %Q1
+  (pnp2.base) node[] {}
+  (pnp2.collector) node[] {}
+  (pnp2.emitter) node[] {};
+  \draw (-1.85,-0.79) node(anchor=east){Q1};
+  \draw (pnp2.base) to[short] (-3.9,-0.79);
+  \draw (-3.4,-.78) to[R=\SI{50}{\kohm}] (-3.4,-2.5)
+  to[short] (-1.85,-2.5)
+  to[short] (-1.85,-1.5);
+  \filldraw [black] (-2.5,-2.5) circle (2pt);
+  \filldraw [black] (-3.4,-.78) circle (2pt);
+  \draw [black] (-3.95,-.78) circle (2pt);
+  \draw (-4.6,-.78) node(anchor=east){-Input};                     %-input
+  \draw (-2.5,-2.5) to[short] (-2.5,-2.9);
+  \draw (-2.2,-2.9) to[short] (-2.8,-2.9);
+  \draw (-2.2,-2.9) to[short] (-2.5,-3.3);
+  \draw (-2.8,-2.9) to[short] (-2.5,-3.3);
+  
+%right side part
+  \draw (1,0) node[pnp, xscale=-1](pnp3){}                     %Q4
+  (pnp3.base) node[] {}
+  (pnp3.collector) node[] {}
+  (pnp3.emitter) node[] {};
+  \draw (1,0) node(anchor=east){Q4};
+  \draw (pnp3.base) to[short] (1.85,-0.5);
+  \draw (1.85,-.79) node[pnp,xscale=-1](pnp4){}            %Q2
+  (pnp4.base) node[] {}
+  (pnp4.collector) node[] {}
+  (pnp4.emitter) node[] {};
+  \draw (1.85,-0.79) node(anchor=east){Q2};
+  \draw (pnp4.base) to[short] (3.9,-0.79);
+  \draw (3.4,-.78) to[R=\SI{50}{\kohm}] (3.4,-2.5)
+  to[short] (1.85,-2.5)
+  to[short] (1.85,-1.5);
+  \filldraw [black] (2.5,-2.5) circle (2pt);
+  \filldraw [black] (3.4,-.78) circle (2pt);
+  \draw [black] (3.95,-.78) circle (2pt);  
+  \draw (4.7,-.78) node(anchor=east){+Input};                      %+input
+  \draw (2.5,-2.5) to[short] (2.5,-2.9);
+  \draw (2.2,-2.9) to[short] (2.8,-2.9);
+  \draw (2.2,-2.9) to[short] (2.5,-3.3);
+  \draw (2.8,-2.9) to[short] (2.5,-3.3);  
+  
+  \draw (pnp1.emitter) node(anchor=east)[xshift=-3]{//};
+  \draw (pnp1.collector) node(anchor=east)[xshift=3]{//};
+  \draw (pnp3.emitter) node(anchor=east)[xshift=-3]{//};
+  \draw (pnp3.collector) node(anchor=east)[xshift=3]{//};
+  
+  
+  
+  
+\end{circuitikz}
+%\end{figure}
+%\end{document}

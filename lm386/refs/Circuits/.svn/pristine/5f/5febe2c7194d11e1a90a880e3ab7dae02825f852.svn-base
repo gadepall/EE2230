@@ -1,0 +1,182 @@
+\documentclass{article}
+\usepackage{siunitx}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage[export]{adjustbox}
+
+\begin{document}
+
+\begin{figure}
+
+    \begin{circuitikz}[american]
+    
+  \draw (0,0) node(anchor=west){Q3};  
+  \draw (0,0) node[pnp](pnp3) {}                %Q3
+  (pnp3.base) node[] {}
+  (pnp3.collector) node[] {}
+  (pnp3.emitter) node[] {};
+  \draw (pnp3.emitter) to[R=\SI{15}{\kohm}] ++(0,2.5)
+  to[R=\SI{15}{\kohm}] ++(0,2.5);
+  
+  \draw ((-1,-1) node(anchor=west){Q1};  
+  \draw (-1,-1) node[pnp](pnp1) {}                %Q1
+  (pnp1.base) node[] {}
+  (pnp1.collector) node[] {}
+  (pnp1.emitter) node[] {};
+  
+  \draw (pnp3.base) to[short] (pnp1.emitter);
+  \filldraw [black] (-1.84,-1) circle (2pt);
+  \draw (pnp1.base) to[R=\SI{50}{\kohm}] ++(0,-4);
+  \draw (pnp1.base) to[short] ++(-0.7,0)
+  to [black] (-3,-1) circle (2pt); 
+  \draw (-3,-1.3) node(anchor=west){-input};
+       \draw (-3,-0.7) node(anchor=north){2};                           %2 -input
+  \draw (-1.84,-5) to[short] (12,-5);
+  \draw (pnp3.emitter) to[R=\SI{150}{\ohm}] ++(2,0)
+  to[R=\SI{1.35}{\kohm}] ++(2,0);
+  \draw (0,5.77) to[short] (12,5.77);
+  \draw [black] (12,5.77) circle (2pt);
+   \draw (12.1,5.47) node(anchor=west){supply};
+   \draw (12,6) node(anchor=north){6};                      %6 supply
+  \draw [black] (12,-5) circle (2pt); 
+  \draw (12.1,-5.3) node(anchor=west){ground};
+   \draw (12,-4.7) node(anchor=north){4};                      %4 ground
+  \filldraw [black] (4,0.77) circle (2pt);
+  \draw (4,0.77) to[short] (4,1.9);
+  \draw [black] (4,1.96) circle (2pt); 
+  \draw (4,2.2) node(anchor=west){8};
+   \draw (4,2.5) node(anchor=north){gain};                   %8 gain
+    \filldraw [black] (2,0.77) circle (2pt);
+    \draw (2,0.77) to[short] (2,1.9);
+    \draw [black] (2,1.96) circle (2pt); 
+    \draw (2,2.2) node(anchor=west){1};
+   \draw (2,2.5) node(anchor=north){gain};                  %1 gain
+  \filldraw [black] (0,3.5) circle (2pt);
+  \draw (0,3.5) to[short] (-1,3.5);
+  \draw [black] (-1,3.5) circle (2pt); 
+  \draw (-1,3.2) node(anchor=west){bypass};
+       \draw (-1,3.8) node(anchor=north){7};                       %7 bypass
+  \draw (pnp1.collector) to[short] (-1,-5);
+  \filldraw [black] (0,0.77) circle (2pt);
+  \filldraw [black] (-1,-5) circle (2pt);    
+   \filldraw [black] (0,-5) circle (2pt); 
+   
+  \draw (0,-4.25) node(anchor=west){Q5};    
+   \draw (0,-4.25) node[npn, xscale=-1](npn5){}   %5
+  (npn5.base) node[] {}
+  (npn5.collector) node[] {}
+  (npn5.emitter) node[] {};
+  
+   \draw (pnp3.collector) to[short] (npn5.collector);
+   \draw (npn5.base) to[short] (0.84,-3.47);
+   \draw (npn5.collector) to[short] (0.84,-3.47);
+   \filldraw [black] (npn5.collector) circle (2pt); 
+   \filldraw [black] (npn5.base) circle (2pt); 
+   
+     \draw (4,0) node(anchor=west){Q4};  
+\draw (4,0) node[pnp, xscale=-1](pnp4){}   %4
+  (pnp4.base) node[] {}
+  (pnp4.collector) node[] {}
+  (pnp4.emitter) node[] {};
+  
+    \draw (4,-4.25) node(anchor=west){Q6};  
+\draw (4,-4.25) node[npn](npn6){}   %6
+  (npn6.base) node[] {}
+  (npn6.collector) node[] {}
+  (npn6.emitter) node[] {};
+  
+   \draw (pnp4.collector) to[short] (npn6.collector);
+   \draw (npn5.base) to[short] (npn6.base);
+     \filldraw [black] (npn6.emitter) circle (2pt); 
+     \filldraw [black] (npn6.collector) circle (2pt); 
+     
+      \draw (5,-1) node(anchor=west){Q2};  
+   \draw (5,-1) node[pnp, xscale=-1](pnp2){}   %2
+  (pnp2.base) node[] {}
+  (pnp2.collector) node[] {}
+  (pnp2.emitter) node[] {};  
+  
+  \draw (pnp2.base) to[short] ++(1,0)
+  to [black] (7,-1) circle (2pt); 
+  \draw (7,-0.7) node(anchor=west){3};
+   \draw (7,-1.3) node(anchor=north){+Input};                            %3 input
+  \draw (pnp4.base) to[short] (pnp2.emitter); 
+  \draw (5,-5) to[short] (pnp2.collector);
+  
+      \draw (9,-3.47) node(anchor=west){Q10};  
+\draw (9,-3.47) node[npn](npn10){}   %10
+  (npn10.base) node[] {}
+  (npn10.collector) node[] {}
+  (npn10.emitter) node[] {};
+  
+  \filldraw [black] (pnp2.base) circle (2pt); 
+  
+  \draw (npn6.collector) to[short] (npn10.base); 
+    \draw (pnp2.base) to[R=\SI{50}{\kohm}] ++(0,-4);
+    
+    \draw (pnp4.emitter) to[R=\SI{15}{\kohm}] ++(5,0)
+    to[diode] (9,-1)
+    to[short] (npn10.collector);
+    \draw (6.5,1.6) node(anchor=north){$R_f$};
+   \draw (npn10.emitter) to[short] (9,-5);
+   \filldraw [black] (9,-5) circle (2pt); 
+  
+        \draw (9.85,-1.5) node(anchor=west){Q8};  
+\draw (9.85,-1.5) node[pnp](pnp8) {}       %Q8
+  (pnp8.base) node[] {}
+  (pnp8.collector) node[] {}
+  (pnp8.emitter) node[] {};
+  
+\draw (pnp8.emitter) to[short] ++(1.15,0);
+   \filldraw [black] (pnp8.base) circle (2pt);
+    \filldraw [black] (9,5.77) circle (2pt);
+\draw (9,5.77) to[I, i_=$.$] (9,3);               %current sourse
+    \draw (9,3) to[diode] (9,0.77);
+    
+     \draw (11,3) node(anchor=west){Q7};  
+   \draw (11,3) node[npn](npn7){}   %7
+  (npn7.base) node[] {}
+  (npn7.collector) node[] {}
+  (npn7.emitter) node[] {};
+  
+  \draw (npn7.base) to[short] (9,3);
+    \draw (npn7.collector) to[short] (11,5.77);
+   \draw (9,0.77) to[short] (12,0.77);
+   
+   \draw (11,-4.23) node(anchor=east){Q9};  
+  \draw (11,-4.23) node[npn](npn9){}   %9
+  (npn9.base) node[] {}
+  (npn9.collector) node[] {}
+  (npn9.emitter) node[] {};
+   
+   \filldraw [black] (npn9.emitter) circle (2pt);
+  \draw (pnp8.collector) to[short] (npn9.base);
+    \draw (npn7.emitter) to[short] (npn9.collector);
+   \filldraw [black] (npn9.emitter) circle (2pt);
+  \filldraw [black] (11,0.77) circle (2pt);
+  \filldraw [black] (11,-0.73) circle (2pt);
+  \draw [black] (12,0.77) circle (2pt);
+  \draw (12.1,0.47) node(anchor=west){output};
+   \draw (12,1) node(anchor=north){5};                   %5 output
+   
+   
+   \draw (0.5,0.2) to[short] (3.5,0.2);
+   \draw (0.5,0.2) to[short] (0.5,0.3);
+  \draw (3.5,0.2) to[short] (3.5,0.3);
+   \draw (2,-0.1) node(anchor=north){$R_e$}; 
+   
+    
+     \draw (2,-3.2) node(anchor=north){Current};  
+   \draw (2,-3.5) node(anchor=north){mirror};
+   \draw [dashed] (-0.3,-3) -- (4.4,-3);
+   \draw [dashed] (-0.3,-3) -- (-0.3,-5.4);
+   \draw [dashed] (-0.3,-5.4) -- (4.4,-5.4);
+   \draw [dashed] (4.4,-5.4) -- (4.4,-3);
+   
+
+
+   \end{circuitikz}  
+   
+\end{figure}
+
+\end{document}

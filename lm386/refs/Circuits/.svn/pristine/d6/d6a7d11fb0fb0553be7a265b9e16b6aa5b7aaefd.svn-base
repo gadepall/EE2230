@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{circuitikz}
+\usepackage{amsmath}
+\usepackage{siunitx} % Preferred over SIunits
+
+\begin{document} 
+\begin{figure}
+
+
+\begin{center}
+\begin{circuitikz}[scale=10]
+
+\draw
+(0,0) node[pnp] (pnp) {}
+(pnp.base) to [short,i_=$i_b$,.-o] (-0.2,0)
+(pnp.collector) to [short,i_=$i_c$,.-o] (0,-0.2)
+(0,0.2) to [short,i_=$i_e$,o-.] (pnp.emitter)
+(0,0) node[anchor = west] {\beta$\approx$ $$\beta_{Q9}\beta_{Q9}$}
+
+;
+
+\end{circuitikz}
+\end{center}
+\end{figure}
+\end{document}
