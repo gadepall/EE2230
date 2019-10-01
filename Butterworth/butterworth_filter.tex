@@ -161,7 +161,7 @@ columns=fullflexible
 \theoremstyle{remark}
 \newtheorem{rem}{Remark}
 \newcommand{\sgn}{\mathop{\mathrm{sgn}}}
-%\providecommand{\abs}[1]{\left\vert#1\right\vert}
+\providecommand{\abs}[1]{\left\vert#1\right\vert}
 \providecommand{\res}[1]{\Res\displaylimits_{#1}} 
 \providecommand{\norm}[1]{\lVert#1\rVert}
 \providecommand{\mtx}[1]{\mathbf{#1}}
@@ -229,78 +229,30 @@ GPL.  Free and open source.}
 \begin{abstract}
 This manual gives an idea about Butterworth filter and its use in signal processing. Sallen-Key topology is used to implement linear analog filter.   
 \end{abstract}
-\section{Introduction}
+\section{Butterworth Filter: Sallen-Key Topology}
 \begin{enumerate}[label=\thesection.\arabic*,ref=\thesection.\theenumi]
-%\begin{enumerate}[label=\arabic*]
-\numberwithin{equation}{enumi}
-\item What is a Butterworth Filter?\\
-\solution It is a low pass filter designed to have a linear magnitude response in pass band. So, it is also referred to as a maximally flat magnitude filter. Even though it does not provide the sharp cut-off response, it is often considered as the all-round filter which is used in many applications.
-
-\numberwithin{equation}{enumi}
-%\begin{figure}[!ht]
-%\centering
-%\includegraphics[width=\columnwidth]{./figs/Buttergr.jpg}
-%\caption{}
-%\label{fig:2}
-%\end{figure}
-\end{enumerate}
-\section{Frequency Response}
-\begin{enumerate}[label=\thesection.\arabic*,ref=\thesection.\theenumi]
-\numberwithin{equation}{enumi}
-% \item What can you say about the frequency response of this filter?\\
-% \solution The Butterworth filter has frequency response as flat as mathematically possible, hence it is also called as a maximally flat magnitude filter (from 0 Hz to cut-off frequency at -3dB \textbf{without any ripples}).\\
-\item Write a mathematical expression for the magnitude response of this filter.\\
-\solution
-\bigskip
-\vspace{-1em} $$ |H_{n}(j\omega)|= \frac{V_{o}}{V_{i}}=\frac{1}{\sqrt{1+{(\frac{\omega}{\omega _c}) ^{2N}}}}$$
-
- where \textit{$\omega _c $ is the cut-off/corner frequency, $N$ is the order of the filter or number of reactive elements in a passive filter.\\}
-\item Plot the frequency response of an ideal Butterworth filter. Write your inference.\\
-\solution Refer to Fig.2.2 for frequency response.\\
-The Butterworth filter achieves pass band flatness at the expense of a wide transition band as the filter changes from the pass band to the stop band.
-
-\begin{figure}{enumi}
-\centering
-\includegraphics[width=\columnwidth]{./figs/plotforgain.eps}
-\caption{}
-\label{fig:1}
-\end{figure}
-\end{enumerate}
-\section{Filter Implementation using Circuits}
-\begin{enumerate}[label=\thesection.\arabic*,ref=\thesection.\theenumi]
-\numberwithin{equation}{enumi}
-% \item What is Filter topology?\\
-% \solution Electronic filter topology defines electronic filter circuits without taking note of the values of the components used but only the manner in which those components are connected.\\
-\item What are the Filter topologies used to implement this filter.\\
-\solution There are several different filter topologies available to implement a linear analog filter. The most often used topology for a passive realisation is Cauer topology and the most often used topology for an active realisation is Sallen–Key topology.\\
-\item Describe briefly Cauer and Sallen-Key \\ topology. \\
- \solution $(i)$ \textit{{Cauer Topology}}: The Cauer \\ topology uses passive components (shunt capacitors and series inductors) to implement a linear analog filter. The Butterworth filter having a given transfer function can be realised using a Cauer 1-form. Fig shown below is an example of Cauer topology. \\
- \begin{figure}[!ht]
-\centering
-\includegraphics[width=0.7\columnwidth]{./figs/Cauer.eps}
-\caption{}
-\label{fig:1}
-\end{figure}
- $(ii)$ \textit{Sallen-Key Topology}: The Sallen–Key \\ topology uses active and passive components (op-amps operating in non-inverting region, resistors, and capacitors) to implement a linear analog filter. Each Sallen–Key stage implements a conjugate pair of poles; the overall filter is implemented by cascading all stages in series. Fig shown below is an example of Sallen-Key topology.\\
- \begin{figure}[!ht]
-\centering
-\includegraphics[width=\columnwidth]{./figs/sallenkey.eps}
-\caption{A second order sallen-key filter}
-\label{fig:2}
-\end{figure}
-**\textbf{NOTE}: We will limit our discussion to Sallen-Key topology only.
-\end{enumerate}
-
-\section{Sallen-Key Circuit Analysis}
-\begin{enumerate}[label=\thesection.\arabic*,ref=\thesection.\theenumi]
-\item Derive the expression for transfer function of a general second order sallen-key filter.\\
-\solution
+\item Show that 
+\begin{equation}
+\label{eq:tf}
+H(s) = \frac{V_{0}(s)}{V_i(s)} = \frac{k\omega_{c}^{2}}{s^{2}+ \frac{\omega_{c}}{Q}s+\omega_{c}^{2}}
+\end{equation}
+in Fig. \ref{fig:butter},
+where 
+\begin{align}
+\omega_c &= \frac{1}{\sqrt{R_{1}R_{2}C_{1}C_{2}}}
+\\
+Q &= \frac{R_{1}C_{2}+R_{2}C_{2}+R_{1}C_{1}(1-k)}{R_{1}R_{2}C_{1}C_{2}}
+\\
+k&=1+\dfrac{R_{4}}{R_{3}}
+\end{align}
+%
 \begin{figure}[!ht]
 \centering
-\includegraphics[width=0.7\columnwidth]{./figs/sallen_key_general.eps}
+\includegraphics[width=\columnwidth]{./figs/sallen_key_general.eps}
 \caption{}
-\label{fig:2}
+\label{fig:butter}
 \end{figure}
+\solution
 Because the op-amp is operating in non-inverting region,
 \begin{equation}
 V_{0} = (1+\dfrac{R_{4}}{R_{3}})V_{B}
@@ -318,12 +270,22 @@ Also,
 \begin{equation}
 k = \dfrac{R_{3}+R_{4}}{R_{3}}
 \end{equation}
-On solving the above equations for $\frac{V_o}{V_i}$. we have, 
+On solving the above equations for $\frac{V_o}{V_i}$  we obtain \eqref{eq:tf}. 
+%\begin{equation}
+%\frac{V_o}{V_i} = \dfrac{\dfrac{k}{R_{1}R_{2}C_{1}C_{2}}}{s^{2} + s\dfrac{R_{1}C_{2}+R_{2}C_{2}+R_{1}C_{1}(1-k)}{R_{1}R_{2}C_{1}C_{2}} + \dfrac{1}{R_{1}R_{2}C_{1}C_{2}}}
+%\end{equation}
+\item If 
 \begin{equation}
-\frac{V_o}{V_i} = \dfrac{\dfrac{k}{R_{1}R_{2}C_{1}C_{2}}}{s^{2} + s\dfrac{R_{1}C_{2}+R_{2}C_{2}+R_{1}C_{1}(1-k)}{R_{1}R_{2}C_{1}C_{2}} + \dfrac{1}{R_{1}R_{2}C_{1}C_{2}}}
+\abs{H\brak{\j\omega}}= \frac{1}{\sqrt{1+{(\frac{\omega}{\omega _c}) ^{2N}}}},
 \end{equation}
+%
+show that
+\begin{align}
+N = 2, Q = \frac{1}{\sqrt{2}}.
+\end{align}
+%\item Derive the expression for transfer function of a general second order sallen-key filter.\\
 
-\vspace{10pt}
+%\vspace{10pt}
 \item Design a general $2^{nd}$ order butterworth low pass filter with cut-off frequency $f_{c}$ Hz  .\\
 %\begin{figure}[!ht]
 %\centering
@@ -336,11 +298,73 @@ In (4.1.5),$Q = \dfrac{\sqrt{R_{1}R_{2}C_{1}C_{2}}}{R_{1}C_{2}+R_{2}C_{2}+R_{1}C
 $\omega_{c} = \dfrac{1}{\sqrt{R_{1}R_{2}C_{1}C_{2}}}$. And $K = 3-\dfrac{1}{Q}=1+\dfrac{R_{4}}{R_{3}}$.\\Let $R_{1}=R_{2}=R$ and $C_{1}=C_{2}=C$. And for Butterworth Filter Q = 0.707.\\
 Therefore $H(s) = \dfrac{1.586\omega_{c}^{2}}{s^{2}+ 1.414\omega_{c}s+\omega_{c}^{2}}$\\
 and $R_{4} = 0.586R_{3}$
-\vspace{10pt}
-\item Design a 4th order Butterworth filter with cut-off frequency 1 kHz.\\
-\solution 
-Cascading two $2^{nd}$ order butterworth filters realised with sallen-key topology\\we get,\\
-$\omega_{c} = 2000\pi $ rad/sec
-$$H(S) = \frac{2.57\omega_{c}^{4}}{(s^{2} + 0.7654\omega_{c}s + \omega_{c}^{2})(s^{2} + 1.8478\omega_{c}s + \omega_{c}^{2})}$$
+%\vspace{10pt}
+\item Design a 4th order Butterworth filter with the following response
+\begin{align}
+H(S) = \frac{2.57\omega_{c}^{4}}{(s^{2} + 0.7654\omega_{c}s + \omega_{c}^{2})(s^{2} + 1.8478\omega_{c}s + \omega_{c}^{2})}
+\end{align}
+
+%with cut-off frequency 1 kHz.\\
+%\solution 
+%Cascading two $2^{nd}$ order butterworth filters realised with sallen-key topology\\we get,\\
+%$\omega_{c} = 2000\pi $ rad/sec
+%$$
+%$$
 \end{enumerate}
+%\section{Introduction}
+%\begin{enumerate}[label=\thesection.\arabic*,ref=\thesection.\theenumi]
+%%\begin{enumerate}[label=\arabic*]
+%\numberwithin{equation}{enumi}
+%\item What is a Butterworth Filter?\\
+%\solution It is a low pass filter designed to have a linear magnitude response in pass band. So, it is also referred to as a maximally flat magnitude filter. Even though it does not provide the sharp cut-off response, it is often considered as the all-round filter which is used in many applications.
+%
+%\numberwithin{equation}{enumi}
+%%\begin{figure}[!ht]
+%%\centering
+%%\includegraphics[width=\columnwidth]{./figs/Buttergr.jpg}
+%%\caption{}
+%%\label{fig:2}
+%%\end{figure}
+%\end{enumerate}
+%\section{Frequency Response}
+%\begin{enumerate}[label=\thesection.\arabic*,ref=\thesection.\theenumi]
+%\numberwithin{equation}{enumi}
+%% \item What can you say about the frequency response of this filter?\\
+%% \solution The Butterworth filter has frequency response as flat as mathematically possible, hence it is also called as a maximally flat magnitude filter (from 0 Hz to cut-off frequency at -3dB \textbf{without any ripples}).\\
+%\item Plot the frequency response of an ideal Butterworth filter. Write your inference.\\
+%\solution Refer to Fig.2.2 for frequency response.\\
+%The Butterworth filter achieves pass band flatness at the expense of a wide transition band as the filter changes from the pass band to the stop band.
+%
+%\begin{figure}{enumi}
+%\centering
+%\includegraphics[width=\columnwidth]{./figs/plotforgain.eps}
+%\caption{}
+%\label{fig:1}
+%\end{figure}
+%\end{enumerate}
+%\section{Filter Implementation using Circuits}
+%\begin{enumerate}[label=\thesection.\arabic*,ref=\thesection.\theenumi]
+%\numberwithin{equation}{enumi}
+%% \item What is Filter topology?\\
+%% \solution Electronic filter topology defines electronic filter circuits without taking note of the values of the components used but only the manner in which those components are connected.\\
+%\item What are the Filter topologies used to implement this filter.\\
+%\solution There are several different filter topologies available to implement a linear analog filter. The most often used topology for a passive realisation is Cauer topology and the most often used topology for an active realisation is Sallen–Key topology.\\
+%\item Describe briefly Cauer and Sallen-Key \\ topology. \\
+% \solution $(i)$ \textit{{Cauer Topology}}: The Cauer \\ topology uses passive components (shunt capacitors and series inductors) to implement a linear analog filter. The Butterworth filter having a given transfer function can be realised using a Cauer 1-form. Fig shown below is an example of Cauer topology. \\
+% \begin{figure}[!ht]
+%\centering
+%\includegraphics[width=0.7\columnwidth]{./figs/Cauer.eps}
+%\caption{}
+%\label{fig:1}
+%\end{figure}
+% $(ii)$ \textit{Sallen-Key Topology}: The Sallen–Key \\ topology uses active and passive components (op-amps operating in non-inverting region, resistors, and capacitors) to implement a linear analog filter. Each Sallen–Key stage implements a conjugate pair of poles; the overall filter is implemented by cascading all stages in series. Fig shown below is an example of Sallen-Key topology.\\
+% \begin{figure}[!ht]
+%\centering
+%\includegraphics[width=\columnwidth]{./figs/sallenkey.eps}
+%\caption{A second order sallen-key filter}
+%\label{fig:2}
+%\end{figure}
+%**\textbf{NOTE}: We will limit our discussion to Sallen-Key topology only.
+%\end{enumerate}
+
 \end{document}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  1 OCT 2019 10:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  1 OCT 2019 13:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1195,9 +1195,6 @@ Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
 
 LaTeX Warning: Label `fig:1' multiply defined.
 
-
-LaTeX Warning: Label `fig:2' multiply defined.
-
 )
 \openout1 = `butterworth_filter.aux'.
 
@@ -1335,65 +1332,67 @@ LaTeX Font Info:    Try loading font information for U+txsyc on input line 225.
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/txfonts/utx
 syc.fd
 File: utxsyc.fd 2000/12/15 v3.1
-) (./butterworth_filter.toc)
+) (./butterworth_filter.toc
+Overfull \hbox (12.22803pt too wide) in paragraph at lines 1--1
+[][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1--1
+[]  
+ []
+
+)
 \tf@toc=\write6
 \openout6 = `butterworth_filter.toc'.
 
+File: ./figs/sallen_key_general.eps Graphic file (type eps)
+ <./figs/sallen_key_general.eps>
 
-Underfull \hbox (badness 10000) in paragraph at lines 257--258
+LaTeX Warning: Command \j invalid in math mode on input line 279.
 
+
+Overfull \hbox (28.27942pt too wide) detected at line 305
+[]
  []
 
-File: ./figs/plotforgain.eps Graphic file (type eps)
-<./figs/plotforgain.eps>
-Underfull \hbox (badness 5133) in paragraph at lines 274--276
-[]\OT1/txr/m/n/12 What are the Fil-ter topolo-gies used to
- []
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-Underfull \hbox (badness 10000) in paragraph at lines 274--276
-
- []
-
-File: ./figs/Cauer.eps Graphic file (type eps)
-<./figs/Cauer.eps>
-File: ./figs/sallenkey.eps Graphic file (type eps)
- <./figs/sallenkey.eps> [1
+ [1
 
 
 ]
-File: ./figs/sallen_key_general.eps Graphic file (type eps)
- <./figs/sallen_key_general.eps>
-Overfull \hbox (28.7967pt too wide) detected at line 324
-[][] \OT1/txr/m/n/12 = []
- []
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 370.
 
+[2
 
-Overfull \hbox (28.27942pt too wide) detected at line 344
-\OML/txmi/m/it/12 H\OT1/txr/m/n/12 (\OML/txmi/m/it/12 S\OT1/txr/m/n/12 ) = []
- []
-
-[2]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 346.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 346.
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 370.
  (./butterworth_filter.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 346.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 346.
-Package rerunfilecheck Info: File `butterworth_filter.out' has not changed.
-(rerunfilecheck)             Checksum: 9D75D45A8A6AF4263D7B90C92F6B4777;233.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 370.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 370.
 
+
+Package rerunfilecheck Warning: File `butterworth_filter.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `butterworth_filter.out':
+(rerunfilecheck)             Before: E79FCF8F764D1DBFE194F77D5A499353;245
+(rerunfilecheck)             After:  134C8B3A3DFDF04E8B20D97932442E40;74.
 
 LaTeX Warning: There were multiply-defined labels.
 
  )
 (\end occurred when \ifx on line 161 was incomplete) 
 Here is how much of TeX's memory you used:
- 24272 strings out of 492624
- 480536 string characters out of 6119216
- 575451 words of memory out of 5000000
- 27710 multiletter control sequences out of 15000+600000
+ 24266 strings out of 492624
+ 480366 string characters out of 6119216
+ 578451 words of memory out of 5000000
+ 27707 multiletter control sequences out of 15000+600000
  60929 words of font info for 145 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 54i,8n,67p,804b,455s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,13n,67p,804b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on butterworth_filter.dvi (2 pages, 21256 bytes).
+Output written on butterworth_filter.dvi (2 pages, 17720 bytes).
