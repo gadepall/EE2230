@@ -255,7 +255,7 @@ k&=1+\dfrac{R_{4}}{R_{3}}
 \solution
 Because the op-amp is operating in non-inverting region,
 \begin{equation}
-V_{0} = (1+\dfrac{R_{4}}{R_{3}})V_{B}
+V_{0} = \brak{1+\dfrac{R_{4}}{R_{3}}}V_{B}
 \end{equation}
 Applying KCL at Node A:
 \begin{equation}
@@ -293,16 +293,24 @@ N = 2, Q = \frac{1}{\sqrt{2}}.
 %\caption{}
 %\label{fig:1}
 %\end{figure}
-\solution $\omega_{c} = 2\pi f_{c}$\\
-In (4.1.5),$Q = \dfrac{\sqrt{R_{1}R_{2}C_{1}C_{2}}}{R_{1}C_{2}+R_{2}C_{2}+R_{1}C_{1}(1-k)}$\\
-$\omega_{c} = \dfrac{1}{\sqrt{R_{1}R_{2}C_{1}C_{2}}}$. And $K = 3-\dfrac{1}{Q}=1+\dfrac{R_{4}}{R_{3}}$.\\Let $R_{1}=R_{2}=R$ and $C_{1}=C_{2}=C$. And for Butterworth Filter Q = 0.707.\\
-Therefore $H(s) = \dfrac{1.586\omega_{c}^{2}}{s^{2}+ 1.414\omega_{c}s+\omega_{c}^{2}}$\\
-and $R_{4} = 0.586R_{3}$
+\solution The relevant parameters are
+\begin{align}
+\omega_{c} &= 2\pi f_{c},
+\\
+K &= 3-\dfrac{1}{Q}
+\end{align}
+
+%In (4.1.5),$Q = \dfrac{\sqrt{R_{1}R_{2}C_{1}C_{2}}}{R_{1}C_{2}+R_{2}C_{2}+R_{1}C_{1}(1-k)}$\\
+%$\omega_{c} = \dfrac{1}{\sqrt{R_{1}R_{2}C_{1}C_{2}}}$. And $=1+\dfrac{R_{4}}{R_{3}}$.\\Let $R_{1}=R_{2}=R$ and $C_{1}=C_{2}=C$. And for Butterworth Filter Q = 0.707.\\
+%Therefore $H(s) = \dfrac{1.586\omega_{c}^{2}}{s^{2}+ 1.414\omega_{c}s+\omega_{c}^{2}}$\\
+%and $R_{4} = 0.586R_{3}$
 %\vspace{10pt}
 \item Design a 4th order Butterworth filter with the following response
-\begin{align}
-H(S) = \frac{2.57\omega_{c}^{4}}{(s^{2} + 0.7654\omega_{c}s + \omega_{c}^{2})(s^{2} + 1.8478\omega_{c}s + \omega_{c}^{2})}
-\end{align}
+\begin{multline}
+H(s)  =
+\\
+ \frac{2.57\omega_{c}^{4}}{(s^{2} + 0.7654\omega_{c}s + \omega_{c}^{2})(s^{2} + 1.8478\omega_{c}s + \omega_{c}^{2})}
+\end{multline}
 
 %with cut-off frequency 1 kHz.\\
 %\solution 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  1 OCT 2019 13:13
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Termux) (preloaded format=latex 2019.9.28)  2 OCT 2019 10:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1191,11 +1191,7 @@ Package: hhline 2014/10/28 v2.03 Table rule package (DPC)
 (/data/data/com.termux/files/usr/share/texlive/texmf-dist/tex/latex/graphics/ls
 cape.sty
 Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
-) (./butterworth_filter.aux
-
-LaTeX Warning: Label `fig:1' multiply defined.
-
-)
+) (./butterworth_filter.aux)
 \openout1 = `butterworth_filter.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/txmi/m/it on input line 123.
@@ -1351,48 +1347,26 @@ File: ./figs/sallen_key_general.eps Graphic file (type eps)
 
 LaTeX Warning: Command \j invalid in math mode on input line 279.
 
-
-Overfull \hbox (28.27942pt too wide) detected at line 305
-[]
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [1
+[1
 
 
 ]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 370.
-
-[2
-
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 370.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 378.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 378.
  (./butterworth_filter.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 370.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 370.
-
-
-Package rerunfilecheck Warning: File `butterworth_filter.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `butterworth_filter.out':
-(rerunfilecheck)             Before: E79FCF8F764D1DBFE194F77D5A499353;245
-(rerunfilecheck)             After:  134C8B3A3DFDF04E8B20D97932442E40;74.
-
-LaTeX Warning: There were multiply-defined labels.
-
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 378.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 378.
+Package rerunfilecheck Info: File `butterworth_filter.out' has not changed.
+(rerunfilecheck)             Checksum: 134C8B3A3DFDF04E8B20D97932442E40;74.
  )
 (\end occurred when \ifx on line 161 was incomplete) 
 Here is how much of TeX's memory you used:
- 24266 strings out of 492624
- 480366 string characters out of 6119216
- 578451 words of memory out of 5000000
- 27707 multiletter control sequences out of 15000+600000
+ 24261 strings out of 492624
+ 480319 string characters out of 6119216
+ 577451 words of memory out of 5000000
+ 27702 multiletter control sequences out of 15000+600000
  60929 words of font info for 145 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 54i,13n,67p,804b,464s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 54i,13n,67p,804b,429s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on butterworth_filter.dvi (2 pages, 17720 bytes).
+Output written on butterworth_filter.dvi (1 page, 15612 bytes).
